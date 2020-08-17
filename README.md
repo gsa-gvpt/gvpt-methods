@@ -1,6 +1,6 @@
-# UMD Maryland GVPT Political Methodology Workshop Series
+# UMD Government and Politics Political Methodology Workshop Series
 
-2020-2021 Maintainers & Contributors:
+__2020-2021 Maintainers & Contributors:__
 - [Evan A. Jones](https://github.com/EandrewJones)
 - Xiaonan Wang
 - Ted Ellsworth
