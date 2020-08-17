@@ -1,4 +1,4 @@
-# UMD Government and Politics Political Methodology Workshop Series
+# UMD Government and Politics Methodology Workshop Series
 
 __2020-2021 Maintainers & Contributors:__
 - [Evan A. Jones](https://github.com/EandrewJones)
