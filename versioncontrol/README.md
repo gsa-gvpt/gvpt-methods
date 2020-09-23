@@ -6,7 +6,7 @@ Last updated: September 23, 2020
 
 ## Video
 
-A video of the presentation can be found (here)[https://www.dropbox.com/s/rtwnh4hk7ilo6o2/version-control-khpark.mp4?dl=0].
+A video of the presentation can be found [here](https://www.dropbox.com/s/rtwnh4hk7ilo6o2/version-control-khpark.mp4?dl=0).
 
 ## Description
 
