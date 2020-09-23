@@ -2,6 +2,7 @@
 
 __2020-2021 Maintainers:__
 - [Evan A. Jones](https://github.com/EandrewJones)
+- [Kee Hyun Park](https://github.com/keehyunpark)
 - Xiaonan Wang
 
 ### Fall 2020 Series
