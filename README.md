@@ -8,3 +8,4 @@ __2020-2021 Maintainers:__
 ### Fall 2020 Series
 
 1. [Version Control Using Git and GitHub](https://github.com/EandrewJones/gvpt-methods/tree/master/versioncontrol)
+2. [Interviewing](https://github.com/EandrewJones/gvpt-methods/tree/master/interviews/)
