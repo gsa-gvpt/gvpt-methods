@@ -2,6 +2,11 @@
 
 Hyunki Kim & Connor Kopchick
 
+Email: hkim0123@terpmail.umd.edu & ckopchic@terpmail.umd.edu
+
+The presenters generously offered to answer queries related to the presentation
+via email.
+
 Last updated: October 6, 2020
 
 ## Video
