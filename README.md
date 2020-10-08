@@ -9,3 +9,4 @@ __2020-2021 Maintainers:__
 
 1. [Version Control Using Git and GitHub](https://github.com/EandrewJones/gvpt-methods/tree/master/versioncontrol)
 2. [Interviewing](https://github.com/EandrewJones/gvpt-methods/tree/master/interviews/)
+3. [Methods Training Roundtable](https://github.com/EandrewJones/gvpt-methods/tree/master/roundtable/)
