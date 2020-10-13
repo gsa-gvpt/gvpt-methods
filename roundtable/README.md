@@ -12,7 +12,7 @@ Speakers:
 
 ## Video
 
-**video forthcoming**.
+The video can be found [here](https://www.dropbox.com/s/tj2d6130v60j44h/methods-training-roundtable.mp4?dl=0).
 
 ## Description
 
