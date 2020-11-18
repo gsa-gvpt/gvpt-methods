@@ -1,0 +1,836 @@
+---
+title: "GVPT 2020 Fall Method Workshop: Modelling"
+author: "Xiaonan Wang"
+date: "November 17, 2020"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+## 2020 GVPT Method WorKshop
+
+-- **Manage work flows**
+
+-- **Data collection**
+
+-- **Data cleaning**
+
+-- **Learn from your data (today)**
+
+-- **Visualization: communicate to others (next workshop)**
+
+## What Is Not Covered in This Presentation 
+
+-- **Causal inference (next semester)**
+
+-- **Basics and extensions of models (GVPT 622, 722, 729, ...)**
+
+-- **Integrating theoretical and empirical models (EITM)**
+
+-- **Machine learning**
+
+## What This Presentation Is About
+
+-- **How Models Can Benefit and Mislead Us**
+
+  - Data generating process
+  
+  - Data versus model structure
+  
+  - Use intuitive examples to highlight practical trade-offs
+
+-- **Use Modelling Tools from *Tidyverse* Package**
+
+  - Tools that make data exploratory easier (know your data)
+
+  - Work with pipes and seamlessly connect with data
+  
+  - *R for Data Science*, https://r4ds.had.co.nz/
+
+## Data Generating Process
+
+Let's say we have the following dataset
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+### Require tidyverse package
+library(tidyverse)
+### Set the seed of R's random number generator (for reproducibility) 
+set.seed(1221)
+### Number of observations
+obs<-500
+### Generate D
+D<-sample(c(0,1),obs,replace=T)
+### Generate X
+mu_x<-1; sigma_x<-5
+X<-rnorm(n=obs,mean=mu_x,sd=sigma_x)
+### Generate Y (Y=b0+b1*D+b2*X+e)
+b0<-0.5; b1<-1.6; b2<-1.8; mu_e<-0; sigma_e<-5 
+y<-b0+b1*D+b2*X+rnorm(n=obs,mean=mu_e,sd=sigma_e)
+### tibble y, D, and X as a dataset
+d<-tibble(y,D,X)
+d
+```
+
+## Data Generating Process
+
+-- How are y, D, and X generated?
+
+-- What distributions do y, D, and X come from?
+
+-- Are observations correlated and how?
+
+-- Are variables correlated and how?
+
+......
+
+**We often don't know the true data generating process**
+
+## Model
+
+-- **Models partition variations into patterns and noises**
+
+  - Variation: within a variable
+  
+  - Covariation: between variables
+  
+  - A model is a low-dimension summary of the dataset
+
+-- **Models are subjective**
+
+  - "All models are wrong, but some are useful"
+
+  - "A model is a representation for a particular purpose"
+
+## Model and Data
+
+-- **Models put structures on data**
+
+  - Assumptions about connections among variables are made
+  
+  - Functional forms
+  
+  $$y=\alpha_0+\alpha_1 x_1+ \alpha_2 x_2 +\alpha_3 x_3$$
+
+## Model and Data
+
+-- **Why not just let data speak for itself**
+
+  - There are ways to extract connections without structures
+  
+  - But structures may exist in the data
+  
+  - Easier to interpret
+  
+  - Easier to quantify uncertainty
+  
+  - We have theories (know the data generating process)
+  
+-- **We do not always have the luxury to let data speak for itself**  
+  
+  - **We need large and informative data!**
+  
+  - **Research designs!** (next semester) 
+
+## Example 1
+
+```{r,warning=FALSE,message=FALSE}
+library(tidyverse)
+### Set the seed of R's random number generator (for reproducibility) 
+set.seed(1221)
+### Number of observations
+obs<-500
+### Generate D
+D<-sample(c(0,1),obs,replace=T)
+### Generate X
+mu_x<-1; sigma_x<-5
+X<-rnorm(n=obs,mean=mu_x,sd=sigma_x)
+### Generate Y (Y=b0+b1*D+b2*X+e)
+b0<-0.5; b1<-1.6; b2<-1.8; mu_e<-0; sigma_e<-5  
+y<-b0+b1*D+b2*X+rnorm(n=obs,mean=mu_e,sd=sigma_e)
+```
+
+**What does this data generating process tell us?**
+
+## Example 1
+
+```{r,warning=FALSE,message=FALSE}
+### tibble y, D, and X as a dataset
+d<-tibble(y,D,X)
+### take a look at the data
+summary(d)
+```
+
+## Example 1
+
+**Research question: how does D affect Y?**
+
+```{r,warning=FALSE,message=FALSE}
+### compare two group means: Student-t test
+t.test(y~D,var.equal=T)
+```
+
+## Example 1
+
+```{r,warning=FALSE,message=FALSE}
+### compare two group means (an equivalent way but using "lm")
+gpmeans<-lm(data=d,y~D);summary(gpmeans)$coefficients
+### adding x2, assuming a linear relationship y=beta0+beta1*D+beta2*X
+mod<-lm(data=d,y~D+X);summary(mod)$coefficients
+```
+
+
+## Example 1
+
+**Bias** (repeated sampling)
+
+```{r,warning=FALSE,message=FALSE}
+### a function to generate data
+func_dgp<-function(N,mu_x,sigma_x,mu_e,sigma_e,b0,b1,b2){
+  tibble(D=sample(c(0,1),N,replace=T),
+         X=rnorm(N,mu_x,sigma_x),
+         y=b0+b1*D+b2*X+rnorm(N,mu_e,sigma_e))
+}
+### a function to compare two group means
+func_gpmeans<-function(dataset){
+  m<-lm(data=dataset,y~D);coef(m)[2]
+}
+### a function to add X as a linear model
+func_lmod<-function(dataset){
+  m<-lm(data=dataset,y~D+X);coef(m)[2]
+}
+```
+
+## Example 1
+
+**Bias** (repeated sampling)
+
+```{r,message=FALSE,warning=FALSE}
+### repeated sampling and sampling distribution 
+ndraws<-1000
+est_gpmeans<-est_lmod<-list()
+for (i in 1:ndraws){
+  # draw 1000 samples
+  d_repeated<-func_dgp(N=obs,mu_x=mu_x,mu_e=mu_e,
+                       sigma_x=sigma_x,sigma_e=sigma_e,
+                       b0=b0,b1=b1,b2=b2)
+  # for each sample, compare the two group means
+  est_gpmeans[[i]]<-func_gpmeans(data=d_repeated)
+  # for each sample, run a linear model y~D+X
+  est_lmod[[i]]<-func_lmod(data=d_repeated)
+}
+### tibble the sampling distributions
+est_sampling<-tibble(est_1=unlist(est_gpmeans),est_2=unlist(est_lmod))
+```
+
+
+## Example 1
+
+**Bias** (repeated sampling)
+
+```{r,message=FALSE,warning=FALSE,echo=FALSE}
+### plot the sampling distributions
+ggplot(est_sampling)+
+  geom_density(aes(est_1,fill="y~D"),alpha=0.2,lwd=1)+
+  geom_density(aes(est_2,fill="y~D+X"),alpha=0.2,lwd=1)+
+  scale_fill_manual(values=c("red","blue"),guide_legend(title=""))+
+  geom_vline(xintercept = b1)+
+  labs(x="sampling distributions")+
+  theme_bw()
+```
+
+## Example 1
+
+**Consistency** (number of observations grows to infinity)
+
+```{r,message=FALSE,warning=FALSE}
+sample_size<-seq(from=500,to=50000,by=100)
+est_gpmeans<-est_lmod<-list()
+for (i in 1:length(sample_size)){
+  # draw samples with different sample_size
+  d_asymptotic<-func_dgp(N=sample_size[i],mu_x=mu_x,mu_e=mu_e,
+                       sigma_x=sigma_x,sigma_e=sigma_e,
+                       b0=b0,b1=b1,b2=b2)
+  # for each sample, compare the two group means
+  est_gpmeans[[i]]<-func_gpmeans(data=d_asymptotic)
+  # for each sample, run a linear model y~D+X
+  est_lmod[[i]]<-func_lmod(data=d_asymptotic)
+}
+### tibble the sampling distributions
+est_asymptotic<-tibble(est_1=unlist(est_gpmeans),
+                       est_2=unlist(est_lmod))
+```
+
+## Example 1
+
+**Consistency** (number of observations grows to infinity)
+
+```{r,message=FALSE,warning=FALSE,echo=FALSE}
+### plot the sampling distributions
+ggplot(est_asymptotic)+
+  geom_line(aes(y=est_1,x=1:length(sample_size),col="y~D"),lwd=1,alpha=0.6)+
+  geom_line(aes(y=est_2,x=1:length(sample_size),col="y~D+X"),lwd=1,alpha=0.6)+
+  scale_colour_manual(values=c("red","blue"),guide_legend(title=""))+
+  geom_hline(yintercept = b1)+
+  labs(x="number of observations",y="point estimates of b1")+
+  scale_x_continuous(labels = sample_size[seq(1,length(sample_size),49)],
+                     breaks=seq(1,length(sample_size),49))+
+  theme_bw()
+```
+
+## Take-away Points from Example 1
+
+**In a randomized experiment (or a very good research design)**
+
+  -- Modelling is not essential in estimating the treatment effect
+  
+  -- Correctly specified models reduce standard errors
+  
+  -- Sample size matters
+  
+  -- With samller sampe sizes, correct model helps 
+  
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+set.seed(1221)
+### Number of observations
+obs<-500
+### Generate age
+Age<-round(runif(n=obs,min=18,max=50))
+### Generate gender
+Gender<-sample(c(0,1),obs,replace=T)
+### Generate D
+xb<-(-9.5)+0.6*Age-0.01*I(Age^2)+2.8*Gender
+p<-exp(xb)/(1+exp(xb))
+D<-rbinom(n=obs,size=1,prob=p)
+### Generate Y (Y=b0+b1*D+b2*Age+b3*Age^2+b4*Gender+e)
+b0<-0.5; b1<-1.6; b2<-3.5; b3<-(-0.1); b4<-1.2
+y<-b0+b1*D+b2*Age+b3*I(Age^2)+b4*Gender+
+  rnorm(n=obs,mean=mu_e,sd=sigma_e)
+```
+
+**What does this data generating process tell us?**
+
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+### tibble y, D, and X as a dataset
+d<-tibble(y,D,Age,Gender)
+### take a look at the data
+summary(d)
+```
+
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+### compare two group means
+gpmeans<-lm(data=d,y~D)
+summary(gpmeans)$coefficients
+```
+
+This is way off and we "know" why.
+
+## Example 2
+
+**Control covariates by putting structures on data: modelling**
+
+$$y=\alpha_0+\alpha_1 D + \alpha_2 Age +\alpha_3 Gender$$
+
+-- The effect of $D$ while holding $Age$ and $Gender$ equal
+
+-- The assumption: this is the correct functional form
+
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+### modelling with the above functional form
+mod<-lm(data=d,y~D+Age+Gender)
+summary(mod)$coefficients
+```
+
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+### modelling with the correct functional form
+mod_true<-lm(data=d,y~D+Age+I(Age^2)+Gender)
+summary(mod_true)$coefficients
+```
+
+We often don't know this
+
+## Example 2
+
+**An intuitive way to control covariates: stratification**
+
+--**compare cases in two groups with the same gender**
+
+  -[D=1, Gender=1], [D=0, Gender=1]
+  
+  -[D=1, Gender=0], [D=0, Gender=0]
+  
+--**compare cases in two groups with the same gender and age**
+  
+  -[D=1, Gender=1, Age=25], [D=0, Gender=1, Age=25]
+  
+  -[D=1, Gender=0, Age=26], [D=0, Gender=0, Age=26]
+
+## Example 2
+  
+-- **Problems with continuous variables**
+
+  -[D=1, Gender=1, Age=[20,30)],[D=0, Gender=1, Age=[20,30)]
+  
+  -[D=1, Gender=0, Age=[30,40)],[D=0, Gender=0, Age=[30,40)]
+
+-- **How to stratify continuous variables**
+
+  -many continuous variables have "natural" breakpoints
+  
+  -years of education (high school, college, graduate)
+  
+  -income (official poverty level)
+  
+  -assumptions: variations between strata and within strata
+
+## Example 2
+
+**This is the idea of matching**
+
+-- Matching as data preprossing to reduce model dependence
+
+<font size="3">
+Ho, Daniel E., Kosuke Imai, Gary King, and Elizabeth A. Stuart. "Matching as nonparametric preprocessing for reducing model dependence in parametric causal inference." Political analysis 15, no. 3 (2007): 199-236.
+</font>
+
+-- Losses of data and efficiency
+
+-- How to quantify uncertainty
+
+<font size="3">
+Iacus, Stefano M., Gary King, and Giuseppe Porro. "A theory of statistical inference for matching methods in causal research." Political Analysis 27, no. 1 (2019): 46-68.
+</font>
+
+## Example 2
+
+**Common support and extrapolation**
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+ggplot(d)+
+  geom_density(aes(Age,fill=as.factor(D)),lwd=1,alpha=0.2)+
+  scale_fill_manual(values = c("red","blue"),guide_legend(title="Group"))+
+  theme_bw()
+```
+
+## Example 2
+
+**Common support and extrapolation**
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+ggplot(d)+
+  geom_bar(aes(x=factor(D),fill=factor(Gender)),alpha=0.5)+
+  scale_fill_manual(values=c("red","blue"),guide_legend(title="Gender"))+
+  labs(x="Group",y="")+
+  theme_bw()
+```
+
+## Example 2
+```{r,warning=FALSE,message=FALSE}
+### Require the MatchIt package
+library(MatchIt)
+### Discard data that cannot be matched within strata
+mat<-matchit(D~Age+Gender,data=d,method="cem")
+mat$nn
+```
+
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+### The new dataset
+d_mat<-tibble(get_matches(mat,d));d_mat
+```
+
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+### compare group means within each strata and aggregate (weights)
+gpmeans_strata<-lm(data=d_mat,y~D, weights = weight);
+summary(gpmeans_strata)$coefficients
+```
+
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+### modelling with the wrong functional form
+mod_false<-lm(data=d_mat,y~D+Age+Gender,weights = weight);
+summary(mod_false)$coefficients
+```
+
+## Example 2
+
+```{r,warning=FALSE,message=FALSE}
+### modelling with the right functional form
+mod_true<-lm(data=d_mat,y~D+Age+I(Age^2)+Gender,weights = weight);
+summary(mod_true)$coefficients
+```
+
+## Example 2
+
+**Matching estimators using satuated regressions**
+
+<font size="3">
+Angrist, Joshua D., and Jörn-Steffen Pischke. Mostly harmless econometrics: An empiricist's companion. Princeton university press, 2008.
+</font>
+
+-- Putting each strata as a dummy
+
+-- No functional forms are assumed
+
+-- A matching estimator with different weights
+
+```{r,warning=FALSE,message=FALSE}
+### cut Age to 9 groups with equal size
+d<-d %>% mutate(Age_strata=cut_number(Age,n=9))
+### Gender, Age_strata and their interactions
+mod_mat<-lm(data=d,y~D+Gender*Age_strata)
+```
+
+## 
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+summary(mod_mat)$coefficients[,1:2]
+```
+
+## Take-away Points from Example 2
+
+**In non-experimental studies, we face trade-offs**
+
+<font size="4.5">
+
+-- Modelling helps partion the effect of interests
+
+  - If the functional form is correctly specified
+  
+  - But we need to know the functional forms
+
+-- There are ways to partion the effect of interest without modelling
+
+  - not model dependent (do not need to assume functional forms)
+  
+  - The curse of dimensionality
+  
+  - losses of data and efficiency (structures of the data are not used)
+  
+  - how to quantify uncertainty
+
+</font>
+
+## Take-away Points from Example 2
+
+**How to deal with the trade-offs**
+
+-- Nonparametric data preprocessing before modelling
+
+-- Present results of both
+
+-- **Data collection: large and informative data**
+
+<font size="4.5">
+An example: Chen, Ting, and James Kai-sing Kung. "Busting the “Princelings”: The campaign against corruption in China’s primary land market." The Quarterly Journal of Economics 134, no. 1 (2019): 185-226.
+</font>
+
+-- **Research design** (next semester)
+
+## Modelling with Pipes
+
+**Tools that make data exploratory easier (Know your data)**
+
+***Modelr, Purrr, and Broom***
+
+-- *Modelr*: integrating modelling and data with pipes
+
+-- *purrr* and *broom*: seamlessly connect data with many models 
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+library(tidyverse);library(modelr)
+### read the dataset: media freedom, country-year
+d_media<-read_csv("media.csv");d_media
+```
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+### model matrix
+model_matrix(d_media,media_score~gdp_percapita)
+```
+
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+### model matrix
+model_matrix(d_media,media_score~log(gdp_percapita))
+```
+
+## *Modelr*
+
+```{r}
+### other transformations
+# I (): e.g. I (x^2)
+# poly (): polynomial 
+# ns (): natural splines from "splines" package
+```
+
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+### a simple model
+mod_1<-lm(data=d_media,media_score~log(gdp_percapita))
+### add predictions to the existing dataset
+d_media<-d_media %>% add_predictions(mod_1)
+### add residuals to the existing dataset
+d_media<-d_media %>% add_residuals(mod_1)
+### the basic R function predict() returns a vector
+```
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+d_media
+```
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE,out.width = '70%',fig.align = "center"}
+### it's easy to work with
+ggplot(d_media,aes(x=log(gdp_percapita)))+
+  geom_point(aes(y=media_score))+
+  geom_line(aes(y=pred),lwd=1,colour="red")+
+  theme_bw()
+```
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE,out.width = '70%',fig.align = "center"}
+### it's easy to work with
+ggplot(d_media,aes(x=log(gdp_percapita)))+
+  geom_point(aes(y=resid))+
+  theme_bw()
+```
+
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+### model matrix: adding another predictor
+model_matrix(d_media,media_score~log(gdp_percapita)+log(population))
+```
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+### a model with both gdp per capita and population
+mod_2<-lm(data=d_media,media_score~log(gdp_percapita)+log(population))
+```
+
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+### gather residuals/predictions on two (or multiple) models
+d_media<-d_media %>% gather_residuals(mod_1,mod_2);d_media
+```
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE,out.width = '70%',fig.align = "center"}
+ggplot(d_media,aes(x=log(gdp_percapita)))+
+  geom_point(aes(y=resid))+
+  facet_wrap(~model)+
+  theme_bw()
+```
+
+
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+### use grid to customize input data
+d_media %>% 
+  data_grid(gdp_percapita=seq_range(gdp_percapita,3),
+            population=seq_range(population,2)) %>% 
+  spread_predictions(mod_1,mod_2)
+```
+
+## *Modelr*
+
+```{r,message=FALSE,warning=FALSE}
+### use grid to hold other variables constant
+d_media %>% 
+  data_grid(gdp_percapita=seq_range(gdp_percapita,n=6,trim=0.1),
+            .model=mod_2) %>% 
+  add_predictions(mod_2)
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+library(purrr);library(broom)
+### existing dataset: country-year; nest the existing data frame
+d_media<-read_csv("media.csv")
+d_media_byctry<-d_media %>% 
+  group_by(country) %>% 
+  nest()
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+d_media_byctry
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+d_media_byctry$data[[1]]
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### fit a model to each country and seamlessly connect with the data
+# a function of regression
+model_country<-function(df){
+  lm(data=df,media_score~log(gdp_percapita))
+}
+# use map from purrr package to fit a model on each country
+d_media_byctry<-d_media_byctry %>% 
+  mutate(model=map(data,model_country))
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+d_media_byctry
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### add residuals using map2
+d_media_byctry<-d_media_byctry %>% 
+  mutate(resids=map2(data,model,add_residuals))
+### the order of the argument matters here
+# add_residuals(data, model, var = "resid")
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+d_media_byctry
+```
+
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### use pmap: work with any number of arguments (as a list)
+d_media_byctry %>% mutate(resids=pmap(list(data,model),add_residuals))
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### unnest residuals (for plotting or ...)
+d_media_byctry %>% unnest(resids) %>% print(n=6)
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### broom: turn model outputs into tidy data
+tidy(mod_2)
+### also work with other hypothesis testing functions 
+# tt<-t.test(y~D)
+# tidy(tt)
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### broom: turn model outputs into tidy data
+augment(mod_2)
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### broom: use augment to make predictions with confidence intervals
+d_media %>% 
+  data_grid(gdp_percapita=seq_range(gdp_percapita,6,trim=0.1),
+            .model=mod_2) %>% 
+  augment(mod_2,newdata=.)
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### broom: turn model outputs into tidy data
+glance(mod_2)
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+### connect model outputs with the nested data
+d_media_byctry<-d_media_byctry %>% 
+  mutate(model_out=map(model,glance))
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE}
+options(width = 60)
+print(d_media_byctry,n=6)
+```
+
+## many models with *purrr* and *broom*
+
+Compare the relationship between gdp per capita and media freedom in China, Vietnam, India, and singapore.
+
+```{r,message=FALSE,warning=FALSE}
+d_media_byctry<-d_media_byctry %>% 
+  mutate(pred_byctry=map(model,augment)) %>% 
+  unnest(pred_byctry)
+```
+
+## many models with *purrr* and *broom*
+
+Compare the relationship between gdp per capita and media freedom in China, Vietnam, India, and Singapore.
+
+```{r,message=FALSE,warning=FALSE}
+print(d_media_byctry,n=5)
+```
+
+## many models with *purrr* and *broom*
+
+Compare the relationship between gdp per capita and media freedom in China, Vietnam, India, and Singapore.
+
+```{r,message=FALSE,warning=FALSE}
+d_compare<-d_media_byctry %>% 
+  filter(country %in% c("China","Vietnam","India","Singapore"))
+```
+
+## many models with *purrr* and *broom*
+
+```{r,message=FALSE,warning=FALSE,out.width = '70%',fig.align = "center"}
+ggplot(d_compare,aes(x=log.gdp_percapita.))+
+  geom_point(aes(y=media_score))+
+  geom_line(aes(y=.fitted),lwd=1,colour="red")+
+  facet_wrap(~country)+
+  theme_bw()
+```
+
+
