@@ -6,7 +6,7 @@
 % you want.
 \setbeameroption{hide notes} % Only slide
 %\setbeameroption{show only notes} % Only notes
-%\setbeameroption{show notes on second screen=right} % Both
+%\setbeameroption{show notes on second screen} % Both
 
 %\usepackage{helvet}
 %\usepackage[default]{lato}
@@ -283,8 +283,8 @@
 \end{columns}
 \end{frame}
 \note[itemize]{
-	\item Qualitative researchers also perform causal inference
-	\item Rather than direct effect of X-->Y, seek out entire causal mechanisms
+	\item{Qualitative researchers also perform causal inference}
+	\item{Rather than direct effect of X$\rightarrow$Y, seek out entire causal mechanisms}
 }
 
 \begin{frame}{The "Why?" and "What If?" Questions}
@@ -293,8 +293,8 @@
 	\end{center}
 \end{frame}
 \note[itemize]{
-	\item What distinguishes description and prediction from causal inference?
-	\item How can we move beyond observation, description, and prediction and towards answering causal and counterfactual questions?
+	\item{What distinguishes description and prediction from causal inference?}
+	\item{How can we move beyond observation, description, and prediction and towards answering causal and counterfactual questions?}
 }
 
 \begin{frame}{Outline}
@@ -330,17 +330,22 @@
 	\end{wideitemize}
 \end{frame}
 \note[itemize]{
-	\item These are questions about a supposition or imagined state of reality
-	\item A different turn of historical events
-	\item A real-time intervention 
-	\item A future event
+	\item{These are questions about a supposition or imagined state of reality}
+	\item{A different turn of historical events}
+	\item{A real-time intervention}
+	\item{A future event}
 }
 
 \begin{frame}{Beyond Description}
 	\begin{center}
-		\LARGE Causal mechanisms allow us to make unbiased predictions about the effect of \textcolor{blue}{\emph{interventions}} and \textcolor{blue}{\emph{counterfactual situations}}
+		\LARGE Causal mechanisms allow us to make unbiased predictions about the effect of \textcolor{blue}{\emph{interventions}} \citep{Pearl2018} and \textcolor{blue}{\emph{counterfactual situations}}
 	\end{center}
 \end{frame}
+\note[itemize]{
+	\item{Must an intervention be something that is manipulable? Or can it represent a given state, such as a gender, height or age? Which camp do you fall into?}
+	\item{There is on-going debate about whether non-manipulable variables can take on causal interpretation}
+	\item{Worth reading} 
+}
 
 \begin{frame}{The Ladder of Causation}
 	\begin{columns}[c] % align columns
@@ -366,8 +371,8 @@
 	\end{columns}	
 \end{frame}
 \note[itemize]{
-	\item Reality is a garden of forking paths, we only see one potential outcome of many
-	\item We cannot observe all potential outcomes for every individual
+	\item{Reality is a garden of forking paths, we only see one potential outcome of many}
+	\item{We cannot observe all potential outcomes for every individual}
 }
 
 
@@ -496,8 +501,8 @@
 	\end{columns}
 \end{frame}
 \note[itemize]{
-	\item What do we mean by "causal assumptions"?
-	\item Where do "causal assumptions" come from?
+	\item{What do we mean by "causal assumptions"?}
+	\item{Where do "causal assumptions" come from?}
 }
 
 
@@ -631,9 +636,9 @@
 \end{columns}
 \end{frame}
 \note[itemize]{
-	\item Causal assumptions are represented by the absence of relationships (edges)
-	\item Assuming NO relationship stricter than the contrary
-	\item Intervening frees of of causal assumptions because we know value of X is independent (a la randomization)
+	\item{Causal assumptions are represented by the absence of relationships (edges)}
+	\item{Assuming NO relationship stricter than the contrary}
+	\item{Intervening frees of of causal assumptions because we know value of X is independent (a la randomization)}
 }
 
 \begin{frame}{Simpson's Paradox Revisited}
@@ -794,13 +799,13 @@
 	\end{columns}
 \end{frame}
 \note[itemize]{
-	\item Control over who you want to assign treatments to and how
-	\item e.g. different types of sampling
-	\item Can design the experiment to directly assess research question of interest
-	\item Ethical example cannot start a war
-	\item Physical example limited to phenomena you can examine in a lab or survey
-	\item Temporal example many causal chains stretch over long time scales, longitudinal studies expensive
-	\item transportability highly unlikely that the sample you achieved is perfectly random and free of selection bias, effects unbiased within the sample, but not population of interest
+	\item{Control over who you want to assign treatments to and how}
+	\item{e.g. different types of sampling}
+	\item{Can design the experiment to directly assess research question of interest}
+	\item{Ethical example cannot start a war}
+	\item{Physical example limited to phenomena you can examine in a lab or survey}
+	\item{Temporal example many causal chains stretch over long time scales, longitudinal studies expensive}
+	\item{Transportability highly unlikely that the sample you achieved is perfectly random and free of selection bias, effects unbiased within the sample, but not population of interest}
 }
 
 \begin{frame}{Observational Studies: Pros and Cons}
@@ -909,8 +914,8 @@
 	\end{columns}
 \end{frame}
 \note[itemize]{
-	\item For each voter, we only observed one outcome
-	\item We cannot simultaneously observe two universes, one where individual i is given treatment and one where not, then compare
+	\item{For each voter, we only observed one outcome}
+	\item{We cannot simultaneously observe two universes, one where individual i is given treatment and one where not, then compare}
 }
 
 \begin{frame}{Potential Outcomes Assumptions}
@@ -1282,7 +1287,7 @@
 	\end{wideitemize}
 \end{frame}
 \note[itemize]{
-	\item Critique of assumption true in all models
+	\item{Critique of assumption true in all models}
 }
 
 \section{Conclusion}
@@ -1306,12 +1311,12 @@
 		\item In PO, identifiability is guaranteed so long as we believe intervention is truly random
 		\item Once identified, we can interpret $\beta$ as a causal effect 
 	\end{wideitemize}
+\end{frame}
 \note[itemize]{
-	\item All the work goes into developing good identification strategies and validating that strategy
-	\item Once you achieve identification, there's still a question of the "correct" functional form.
+	\item{All the work goes into developing good identification strategies and validating that strategy}
+	\item{Once you achieve identification, there's still a question of the "correct" functional form.}
 }
 
-\end{frame}
 % Uncomment slide for bibliography
 \begin{frame}[allowframebreaks]{References}
 	\printbibliography
