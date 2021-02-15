@@ -18,7 +18,7 @@ The final part provides a high-level overview of two prominent approaches to cau
 
 ## Materials
 
-The slides are available[here](https://github.com/gsa-gvpt/gvpt-methods/tree/master/CI_intro/intro_to_causal_inference.pdf). A tex version of the file with additional notes is available in the same directory.
+The slides are available [here](https://github.com/gsa-gvpt/gvpt-methods/tree/master/CI_intro/intro_to_causal_inference.pdf). A tex version of the file with additional notes is available in the same directory.
 
 References to some relevant literature can be found at the end of the presentation. 
 
