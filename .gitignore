@@ -3,6 +3,7 @@
 fall-20-schedule.txt
 training_syllabus_for_ilcss.docx
 datacleaning/Ellsworth_DataCleaning.zip
+*.Rhistory
 *.aux
 *bbl
 *.bcf
