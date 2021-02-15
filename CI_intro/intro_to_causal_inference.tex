@@ -4,9 +4,9 @@
 % These slides also contain speaker notes. You can print just the slides,
 % just the notes, or both, depending on the setting below. Comment out the want
 % you want.
-\setbeameroption{hide notes} % Only slide
+%\setbeameroption{hide notes} % Only slide
 %\setbeameroption{show only notes} % Only notes
-%\setbeameroption{show notes on second screen} % Both
+\setbeameroption{show notes on second screen} % Both
 
 %\usepackage{helvet}
 %\usepackage[default]{lato}
@@ -256,7 +256,13 @@
 			}
 		\end{column}%
 	\end{columns}
+\note[itemize]{
+	\item{May not know causal mechanics of physical world down to \textit{functional} form}
+	\item{For instance, many adult may not know the Gas laws PV=nRT, but they have a correct, intuitive---or high-level---understanding of the these relationships just based on playing with balloons or filling your bike tires as a kid}
+}
 \end{frame}
+
+
 
 \begin{frame}{The "Why?" and "What If?" Questions}
 \begin{columns}[T] % align columns
@@ -281,21 +287,30 @@
   }
 \end{column}%
 \end{columns}
-\end{frame}
 \note[itemize]{
+	\item{As researchers, we go a step further. Seek to precisely uncover low-level relationships}
 	\item{Qualitative researchers also perform causal inference}
-	\item{Rather than direct effect of X$\rightarrow$Y, seek out entire causal mechanisms}
+	\item{Rather than uncovering functional forms or quantifying effects, seek out entire causal mechanisms or "configurations" of variables}
+	\item{So much of what we learn about interpreting regressions through telegraphic readings of the political science literature is simply wrong}
+	\item{Not a criticism of previous generations of scholars, causal inference simply not taught in most departments until recently}
+	\item{Moreover, causal inference still rarely taught in \textit{statistics departments}}
 }
+\end{frame}
 
 \begin{frame}{The "Why?" and "What If?" Questions}
 	\begin{center}
 		{ \Huge What is causality?}
 	\end{center}
-\end{frame}
 \note[itemize]{
+	\item{\textcolor{blue}{Ask audience to answer this question?}}
 	\item{What distinguishes description and prediction from causal inference?}
 	\item{How can we move beyond observation, description, and prediction and towards answering causal and counterfactual questions?}
+	\item{This talk won't give you every tool you need to perform causal inference in your own project from start to finish}
+	\item{Field is much too large for that}
+	\item{Hope is to provide you with the philosophical and logical tool kit to engage this literature on your own, and prepare you for presentations to come}
+	\item{Relay how I first jumped into this literature, and why starting from "30,000" feet would have been better}
 }
+\end{frame}
 
 \begin{frame}{Outline}
 	\begin{wideitemize}
@@ -318,7 +333,12 @@
 		\item<2-> Break down phenomena into constituent parts and define how parts interact to produce emergent behavior (\textcolor{blue}{\emph{data-generating process}) }\citep{Simon1953}
 		\item<3-> Once uncovered, causal mechanisms are powerful
 	\end{wideitemize}
+\note[itemize]{
+	\item{Regression models, by themselves, are just descriptions of data, even if it has a high $R^2$, BIC, AIC, etc.,}
+}
 \end{frame}
+
+
 
 \begin{frame}{Beyond Description}
 	We can answer counterfactual questions:
@@ -328,24 +348,26 @@
 		\item<2-> (Resource curse) What \textcolor{blue}{\emph{would have}} been the GDP growth rate without oil?
 		\item<3-> (Democratic peace) \textcolor{blue}{\emph{Would}} the two countries have escalated conflict similarly if they were both autocratic?
 	\end{wideitemize}
-\end{frame}
 \note[itemize]{
 	\item{These are questions about a supposition or imagined state of reality}
 	\item{A different turn of historical events}
 	\item{A real-time intervention}
 	\item{A future event}
 }
+\end{frame}
 
 \begin{frame}{Beyond Description}
 	\begin{center}
-		\LARGE Causal mechanisms allow us to make unbiased predictions about the effect of \textcolor{blue}{\emph{interventions}} \citep{Pearl2018} and \textcolor{blue}{\emph{counterfactual situations}}
+		\LARGE Causal mechanisms allow us to make unbiased predictions about \textcolor{blue}{\emph{counterfactual situations}} and the effect of \textcolor{blue}{\emph{interventions}} \citep{Pearl2018} 
 	\end{center}
-\end{frame}
 \note[itemize]{
-	\item{Must an intervention be something that is manipulable? Or can it represent a given state, such as a gender, height or age? Which camp do you fall into?}
+	\item{Must an intervention be something that is manipulable? Or can it represent a given state, such as a race, gender, height or age? Which camp do you fall into?}
+	\item{We are interested in study the causal effects of non-manipulable effects all the time, and we do indeed "manipulate" them in experiments, but only in the abstract. We cannot manipulate these states for individuals.}
 	\item{There is on-going debate about whether non-manipulable variables can take on causal interpretation}
 	\item{Worth reading} 
 }
+\end{frame}
+
 
 \begin{frame}{The Ladder of Causation}
 	\begin{columns}[c] % align columns
@@ -369,11 +391,11 @@
 		\raggedleft \footnotesize \emph{Taken from \citep[p. 6]{BarenboimEtal2020}}
 		\end{column}%
 	\end{columns}	
-\end{frame}
 \note[itemize]{
 	\item{Reality is a garden of forking paths, we only see one potential outcome of many}
 	\item{We cannot observe all potential outcomes for every individual}
 }
+\end{frame}
 
 
 \begin{frame}{Simpson's Paradox}
@@ -440,7 +462,7 @@
 		\begin{column}{0.4\linewidth}
 		\only<1>{
 			\begin{wideitemize}
-				\item Social media data on user behavior
+				\item Social media data on user engagement
 				\item Consumers of misinformation are \textit{less} likely to believe the election was stolen
 				\item Hmm... what is happening?
 			\end{wideitemize}
@@ -454,7 +476,16 @@
 		}	
 		\end{column}
 	\end{columns}
+\note[itemize]{
+	\item{We are studying the effect of misinformation on beliefs about the election}
+	\item{Group by party, we see 800 out of 1240 people in sample who were exposed to misinformation were Democrats vs 440 Reps, so the 30\% is up-weighted}
+	\item{Among non-exposed, far more Reps than Dems, so the 72\$ is up-weighted}
+	\item{Which ATE is correct? Why and how do you know? Is the sample bad? How do you know? Where's the evidence? Everything is based on (plausible) assumptions (grounded prior knowledge).}
+	\item{Once we wipe the fog from our glasses, all assumptions---about sample size or otherwise---are rooted in a causal structure, as we'll see. }
+}
 \end{frame}
+
+
 
 \begin{frame}{The Ladder of Causation}
 		\footnotesize
@@ -469,7 +500,7 @@
 			$\mathcal{L}_2$ & \makecell[tl]{Interventional \\ $P(y|do(x),c)$} & Doing & \makecell[tl]{What if?\\What if I do $X$?} & \makecell[tl]{What if we tax\\ carbon, will GHG\\emissions lower?} & \makecell[tl]{Experiment /\\Natural\\ Experiment /\\Adjustment}
 		}\\
 		\onslide<4->{
-			$\mathcal{L}_3$ & \makecell[tl]{Counterfactual \\ $P(y_x|x^\prime,y^\prime)$} & Imagining & \makecell[tl]{Why?\\What if I had acted\\differently?} & \makecell[tl]{Was it the Russians\\that caused Trump\\to win?} & \makecell{\\----}
+			$\mathcal{L}_3$ & \makecell[tl]{Counterfactual \\ $P(y_x|x^\prime,y^\prime)$} & Imagining & \makecell[tl]{Why?\\What if I had acted\\differently?} & \makecell[tl]{Was it the Russians\\that caused Trump\\to win?} & \makecell{\\(Adjustment)}
 		}\\
 		\midrule
 		\multicolumn{6}{r}{\footnotesize Based on table from \citep[p. 8]{BarenboimEtal2020}} \\
@@ -499,11 +530,12 @@
 			\raggedleft \footnotesize \emph{Taken from \citep[p. 6]{BarenboimEtal2020}}
 		\end{column}%
 	\end{columns}
-\end{frame}
 \note[itemize]{
 	\item{What do we mean by "causal assumptions"?}
 	\item{Where do "causal assumptions" come from?}
 }
+\end{frame}
+
 
 
 \begin{frame}{The Problem of Causal Inference}
@@ -634,12 +666,17 @@
 }
 \end{column}%
 \end{columns}
-\end{frame}
 \note[itemize]{
+	\item{Explain DAG, nodes are variables, dashed edges represent potential relationships, arrows indicate direction of effect.}
+	\item{\textbf{Ask audience member what they study}}
+	\item{Imagine R dataframe with these variables, show it to your grandma or child. Does it mean anything to them? Let them play with some descriptive plots, can they tell you anything about direction of effects?}
 	\item{Causal assumptions are represented by the absence of relationships (edges)}
 	\item{Assuming NO relationship stricter than the contrary}
 	\item{Intervening frees of of causal assumptions because we know value of X is independent (a la randomization)}
+	\item{At $\mathcal{L}_3$ we observe some intervention, and want to know what would have happened had we altered the intervention or possibily some other variable in the system.}
 }
+\end{frame}
+
 
 \begin{frame}{Simpson's Paradox Revisited}
 	\begin{columns}[T]
@@ -741,7 +778,15 @@
 		}
 	\end{column}
 	\end{columns}
+\note[itemize]{
+	\item{Does partisanship influence consumption of misinformation \textit{and} belief in stop the steal? Very plausible, lot of evidence suggests this is the case}
+	\item{However, maybe you think exposure to/consumption of misinfo influences partianship. E.g. friends who used to be progressive, slowly become Republican after years of consuming conspiratorial content on the internet.}
+	\item{In scenario two, by comparing effects, we see that direct effect of misinformation is positive, but total effect is negative which suggests that indirect channel through partisanship is negative. Maybe, for average voter, exposure to misinfo turns then \textit{away} from the Republicans because of content and leads them to become more left-leaning.}
+	\item{Both are plausible, require further validation of causal assumptions}
+}
+
 \end{frame}
+
 
 \begin{frame}{The Problem of Causal Inference}
 	\begin{adjustwidth*}{1em}{1em}
@@ -797,7 +842,6 @@
 			\end{wideitemize}
 		\end{column}
 	\end{columns}
-\end{frame}
 \note[itemize]{
 	\item{Control over who you want to assign treatments to and how}
 	\item{e.g. different types of sampling}
@@ -807,6 +851,8 @@
 	\item{Temporal example many causal chains stretch over long time scales, longitudinal studies expensive}
 	\item{Transportability highly unlikely that the sample you achieved is perfectly random and free of selection bias, effects unbiased within the sample, but not population of interest}
 }
+\end{frame}
+
 
 \begin{frame}{Observational Studies: Pros and Cons}
 	\begin{columns}[T] %
@@ -912,11 +958,11 @@
 			\end{tabular}
 		\end{column}
 	\end{columns}
-\end{frame}
 \note[itemize]{
 	\item{For each voter, we only observed one outcome}
 	\item{We cannot simultaneously observe two universes, one where individual i is given treatment and one where not, then compare}
 }
+\end{frame}
 
 \begin{frame}{Potential Outcomes Assumptions}
 	\begin{columns}[c]
@@ -1299,16 +1345,17 @@
 
 \begin{frame}{Conclusion}
 	\begin{wideitemize}
-		\item Randomized experiments are a \colorbox{Goldenrod}{gold standard} for causal inference
+		\item Randomized experiments are considered a \colorbox{Goldenrod}{gold standard} for causal inference
 		\item But they are \colorbox{Black}{\textcolor{White}{black boxes}}
 		
 		\item The key to causal inference on observational data is:
 		\begin{itemize}
-			\item make stronger assumptions about the relationships between variables 
+			\item make stronger assumptions about the relationships between variables
 			\item Search for interventional $\mathcal{L}_2$ setups that match theory 
 		\end{itemize}
-		\item In SCM, we determine if causal query is identify; if not, identify minimal adjustment set from DAG
+		\item In SCM, we do the former and establish whether observational data is identified; if not, ask is it achievable and how?
 		\item In PO, identifiability is guaranteed so long as we believe intervention is truly random
+		\item Both require rigorous validation of assumptions
 		\item Once identified, we can interpret $\beta$ as a causal effect 
 	\end{wideitemize}
 \end{frame}
