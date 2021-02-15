@@ -15,3 +15,7 @@ __2020-2021 Maintainers:__
 6. [Modeling Data: Theoretical Principles and Tidyverse Tools](https://github.com/EandrewJones/gvpt-methods/tree/master/modeling)
 7. [Data Visualization](https://github.com/EandrewJones/gvpt-methods/tree/master/datavisualization)
 
+### Spring 2021 Series
+
+1. [A (Brief) Introduction to Causal Inference](https://github.com/EandrewJones/gvpt-methods/tree/master/CI_intro)
+

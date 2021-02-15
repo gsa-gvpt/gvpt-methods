@@ -1,3 +1,19 @@
+
+# Files
 fall-20-schedule.txt
 training_syllabus_for_ilcss.docx
 datacleaning/Ellsworth_DataCleaning.zip
+*.aux
+*bbl
+*.bcf
+*.blg
+*.dvi
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+CI_intro/outline.md
+
