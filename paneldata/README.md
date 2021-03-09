@@ -30,21 +30,21 @@ In this workshop, we discuss both classic and recent literature on causal infere
 
 ### DiD Design
 
-- ["did_multiplegt"](https://ideas.repec.org/c/boc/bocode/s458643.html) [[Companion paper](https://arxiv.org/pdf/1803.08807.pdf)]
-- ["did"](https://github.com/bcallaway11/did) [[Companion paper](https://arxiv.org/pdf/1803.09015.pdf)]
-- ["synthdid"](https://github.com/synth-inference/synthdid) [[Companion paper](https://arxiv.org/pdf/1812.09970.pdf)]
-- ["DiDdesign"](https://github.com/naoki-egami/DIDdesign) [[Companion paper](https://arxiv.org/pdf/2102.09948.pdf)]
-- ["fuzzydid"](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado) (STATA command) Companion paper [[1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf)] and [[2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf)]
-- ["orddid"](https://github.com/soichiroy/orddid) [[Companion paper](https://arxiv.org/pdf/2009.13404.pdf)]
+- did_multiplegt (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458643.html),[companion paper](https://arxiv.org/pdf/1803.08807.pdf)]
+- did (R package) [[vignette](https://github.com/bcallaway11/did), [companion paper](https://arxiv.org/pdf/1803.09015.pdf)]
+- synthdid (R package) [[vignette](https://github.com/synth-inference/synthdid),[companion paper](https://arxiv.org/pdf/1812.09970.pdf)]
+- DiDdesign (R package) [[vignette](https://github.com/naoki-egami/DIDdesign),[companion paper](https://arxiv.org/pdf/2102.09948.pdf)]
+- fuzzydid (STATA command) [[vignette](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado),[companion paper [[1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf)] and [[2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf)]]
+- orddid (R package) [[vignette](https://github.com/soichiroy/orddid),[companion paper](https://arxiv.org/pdf/2009.13404.pdf)]
 
 ### Two-way fixed effects
 
-- ["fect"](http://yiqingxu.org/software/fect/fect.html) [[Companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3555463)]
-- ["wfe"](https://cran.r-project.org/web/packages/wfe/wfe.pdf)] [[Companion paper](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)]
-- [twowayfeweights](https://ideas.repec.org/c/boc/bocode/s458611.html) (STATA command) [[Companion paper](https://arxiv.org/pdf/1803.08807.pdf)]
-- ["PanelMatch"](https://github.com/insongkim/PanelMatch) [[Companion paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
-- ["tjbal"](http://yiqingxu.org/software/tjbal/tjbal.html) [[Companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)]
-- ["gsynth"](http://yiqingxu.org/software/gsynth/gsynth_examples.html) [[Companion paper](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)]
+- fect (R package) [[vignette](http://yiqingxu.org/software/fect/fect.html),[companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3555463)]
+- wfe (R package) [[vignette](https://cran.r-project.org/web/packages/wfe/wfe.pdf),[companion paper](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)]
+- twowayfeweights (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458611.html),[companion paper](https://arxiv.org/pdf/1803.08807.pdf)]
+- PanelMatch (R package) [[vignette](https://github.com/insongkim/PanelMatch),[companion paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
+- tjbal (R package) [[vignette](http://yiqingxu.org/software/tjbal/tjbal.html),[companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)]
+- gsynth (R package) [[vignette](http://yiqingxu.org/software/gsynth/gsynth_examples.html),[companion paper](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)]
 
 ## Reading list
 
