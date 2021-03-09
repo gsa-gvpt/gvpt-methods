@@ -36,7 +36,7 @@ To install each R package, please visit each of their "vignette" page. To instal
 ### DiD Design
 
 - :exclamation: "DiDdesign" (R package) [[vignette](https://github.com/naoki-egami/DIDdesign), [paper](https://arxiv.org/pdf/2102.09948.pdf)]
-- :exclamation: did_multiplegt (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458643.html), [paper](https://arxiv.org/pdf/1803.08807.pdf)]
+- :exclamation: "did_multiplegt" (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458643.html), [paper](https://arxiv.org/pdf/1803.08807.pdf)]
 - :exclamation: "did" (R package) [[vignette](https://github.com/bcallaway11/did), [paper](https://arxiv.org/pdf/1803.09015.pdf)]
 - "synthdid" (R package) [[vignette](https://github.com/synth-inference/synthdid), [paper](https://arxiv.org/pdf/1812.09970.pdf)]
 - "fuzzydid" (STATA command) [[vignette](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado), [paper [1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf) and [2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf)]
@@ -61,7 +61,7 @@ _Basics_
 
 _Difference-in-Differences with multiple periods_
 
-- Arkhangelsky, Dmitry et al. 2020. "Synthetic Difference in Differences." Working paper. [link](https://arxiv.org/pdf/1812.09970.pdf)
+- Arkhangelsky, Dmitry et al. 2020. "Synthetic Difference in Differences." Working paper. [[link](https://arxiv.org/pdf/1812.09970.pdf)]
 - Borusyak, Kirill, and Xavier Jaravel. 2018. "Revisiting Event Study Designs." Working paper. [[link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2826228)]
 - Callaway, Brantly, and Pedro H. C. Sant'Anna. 2020. "Difference-in-Differences with Multiple Time Periods." Forthcoming in Journal of Econometrics. [[link](https://arxiv.org/pdf/1803.09015.pdf)]
 - Egami, Naoki, and Soichiro Yamauchi. 2021. "Using Multiple Pre-treatment Periods to Improve Difference-in-Differences and Staggered Adoption Designs." Working paper. [[link](https://arxiv.org/pdf/2102.09948.pdf)]
@@ -79,7 +79,7 @@ _More on "parallel trends"_
 _Non-linear DiD, different types of outcome variable, etc_
 
 - Abadie, Alberto. 2005. "Semiparametric Difference-in-Differences Estimators." Review of Economic Studies 72(1): 1–19. [[link](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.318.1781&rep=rep1&type=pdf)]
-- Athey, Susan, and Guido W. Imbens. 2006. "Identification and Inference in Nonlinear Difference-in-Differences Models." Econometrica 74(2): 431–97. [[link](https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1468-0262.2006.00668.x)]
+- Athey, Susan, and Guido W. Imbens. 2006. "Identification and Inference in Nonlinear Difference-in-Differences Models." Econometrica 74(2): 431–97. [[link](http://www.ecn.ulaval.ca/guy_lacroix/Cours/ECN-7180/Obligatoires/Athey_Imbens.pdf)]
 - Bertrand, Marianne, Esther Duflo, and Sendhil Mullainathan. 2004. "How Much Should We Trust Differences-in-Differences Estimates?" The Quarterly Journal of Economics 119(1): 249–75. [[link](https://sendhil.org/wp-content/uploads/2019/08/Publication-53.pdf)]
 - de Chaisemartin, Clément, and Xavier D'Haultfœuille. 2018. "Fuzzy Differences-in-Differences." Review of Economic Studies 85(2): 999–1028. [[link](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzy_did.pdf)]
 - de Chaisemartin, Clément, and Xavier D'Haultfœuille. 2020. "Difference-in-Differences Estimators of Intertemporal Treatment Effects." Working paper. [[link](https://sites.google.com/site/clementdechaisemartin/draft_dynamic.pdf?attredirects=0&d=1)]
@@ -93,8 +93,8 @@ _Review_
 
 _Canonical papers_
 - Abadie, Alberto, and Javier Gardeazabal. 2003. "The Economic Costs of Conflict: A Case Study of the Basque Country." The American Economic Review 93(1): 113–32. [[link](https://www.fsb.miamioh.edu/lij14/411_scm2.pdf)]
-- Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." Journal of the American Statistical Association 105(490): 493–505. [[link](https://www.tandfonline.com/doi/pdf/10.1198/jasa.2009.ap08746)]
-- Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. "Comparative Politics and the Synthetic Control Method." American Journal of Political Science 59(2): 495–510. [link](https://onlinelibrary.wiley.com/doi/pdf/10.1111/ajps.12116?casa_token=0Bs6FnwtYt8AAAAA:BPTnYzlr21dDsTKf8DL1cbIOmAfCf2W3baaxLyeGpyI-2NgHQ7OxajsYxn3QaS3vetZCRdG_31KFBe9v)
+- Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." Journal of the American Statistical Association 105(490): 493–505. [[link](https://www.ifs.org.uk/docs/abadiesyntheticcontrolmethods.pdf)]
+- Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. "Comparative Politics and the Synthetic Control Method." American Journal of Political Science 59(2): 495–510. [[link](https://web.stanford.edu/~jhain/Paper/AJPS2015a.pdf)]
 
 _Recent advances_
 - Xu, Yiqing. 2017. "Generalized Synthetic Control Method: Causal Inference with Interactive Fixed Effects Models." Political Analysis 25(1): 57–76. [[link](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)]
@@ -118,6 +118,6 @@ _Inference under heterogenous treatment effects_
 
 _More recent works and extensions_
 
-- Arkangelsky, Dmitry, and Guido W. Imbens. 2021. "Double-Robust Identification for Causal Panel Data Models." NBER Working Paper Series, No. 28364. [[link](http://www.nber.org/papers/w28364)]
+- Arkangelsky, Dmitry, and Guido W. Imbens. 2021. "Double-Robust Identification for Causal Panel Data Models." NBER Working Paper Series, No. 28364. [[link](https://www.nber.org/system/files/working_papers/w28364/w28364.pdf)]
 - de Chaisemartin, Clément, and Xavier D'Haultfœuille. 2020. "Two-Way Fixed Effects Regressions with Several Treatments." Working paper. [[link](https://sites.google.com/site/clementdechaisemartin/Notemultipletreatments.pdf?attredirects=0&d=1)]
 - Hazlett, Chad, and Yiqing Xu. 2018. "Trajectory Balancing: A General Reweighting Approach to Causal Inference with Time-Series Cross-Sectional Data." Working paper. [[link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)]
