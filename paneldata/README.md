@@ -2,7 +2,7 @@
 
 [Xiaonan Wang](https://github.com/Xiaonan21) and [Kee Hyun Park](https://github.com/keehyunpark)
 
-Last updated: March 8, 2021
+Last updated: March 9, 2021
 
 ## Video and Slides
 

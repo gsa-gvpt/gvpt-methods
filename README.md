@@ -19,3 +19,6 @@ __2020-2021 Maintainers:__
 
 1. [A (Brief) Introduction to Causal Inference](https://github.com/EandrewJones/gvpt-methods/tree/master/CI_intro)
 2. [Causal Inference with Panel Data](https://github.com/gsa-gvpt/gvpt-methods/tree/master/paneldata)
+3. Instrumental Variables
+4. Regression Discontinuity Designs
+5. Experimental Designs
