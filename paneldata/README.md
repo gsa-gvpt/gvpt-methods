@@ -92,7 +92,7 @@ _Review_
 - Abadie, Alberto. 2020. "Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects." Forthcoming in Journal of Economic Literature. [[link](https://www.aeaweb.org/content/file?id=12409)]
 
 _Canonical papers_
-- Abadie, Alberto, and Javier Gardeazabal. 2003. "The Economic Costs of Conflict: A Case Study of the Basque Country." The American Economic Review 93(1): 113–32. [[link](https://www.fsb.miamioh.edu/lij14/411_scm2.pdf)]
+- Abadie, Alberto, and Javier Gardeazabal. 2003. "The Economic Costs of Conflict: A Case Study of the Basque Country." American Economic Review 93(1): 113–32. [[link](https://www.fsb.miamioh.edu/lij14/411_scm2.pdf)]
 - Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." Journal of the American Statistical Association 105(490): 493–505. [[link](https://www.ifs.org.uk/docs/abadiesyntheticcontrolmethods.pdf)]
 - Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. "Comparative Politics and the Synthetic Control Method." American Journal of Political Science 59(2): 495–510. [[link](https://web.stanford.edu/~jhain/Paper/AJPS2015a.pdf)]
 
@@ -110,7 +110,7 @@ _Basics_
 _Inference under heterogenous treatment effects_
 
 - Athey, Susan et al. 2020. "Matrix Completion Methods for Causal Panel Data Models." Working paper. [[link](https://arxiv.org/pdf/1710.10251.pdf)]
-- de Chaisemartin, Clément, and Xavier D'Haultfœuille. 2020. "Two-Way Fixed Effects Estimators With Heterogeneous Treatment Effects." The American Economic Review 110(9): 2964–96. [[link](https://arxiv.org/pdf/1803.08807.pdf)]
+- de Chaisemartin, Clément, and Xavier D'Haultfœuille. 2020. "Two-Way Fixed Effects Estimators With Heterogeneous Treatment Effects." American Economic Review 110(9): 2964–96. [[link](https://arxiv.org/pdf/1803.08807.pdf)]
 - Imai, Kosuke, and In Song Kim. 2019. "When Should We Use Linear Fixed Effects Regression Models for Causal Inference with Panel Data?" American Journal of Political Science 63(3): 467–90. [[link](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)]
 - Imai, Kosuke, In Song Kim, and Erik Wang. 2020. "Matching Methods for Causal Inference with Time-Series Cross-Section Data." Working paper. [[link](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
 - Imai, Kosuke, and In Song Kim. 2020. "On the Use of Linear Fixed Effects Regression Models for Causal Inference." Forthcoming in Political Analysis. [[link](https://imai.fas.harvard.edu/research/files/FEmatch-twoway.pdf)]
