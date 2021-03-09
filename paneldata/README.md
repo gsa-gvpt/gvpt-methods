@@ -53,12 +53,24 @@ To install each R package, please visit each of their "vignette" page. To instal
 
 ## Reading list
 
+### Potential Outcomes Framework
+
+- :exclamation: Imbens, Guido W., and Donald B. Rubin. 2015. _Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction_. Cambridge University Press, Ch 1.
+- :exclamation: Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Chs. 1-2.
+- Holland, Paul W. 1986. "Statistics and Causal Inference." Journal of the American Statistical Association} 81(396): 945–60. [[link](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1045.9886&rep=rep1&type=pdf)]
+
 ### Difference-in-Differences
 
-_Basics_
+_DiD Basics_
 
-- Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Ch. 5.
-- Imbens, Guido W., and Donald B. Rubin. 2015. _Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction_. Cambridge University Press, Chs. 1-2.
+- Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Ch. 5.2.
+
+_Selected recent applications from Political Science_
+
+- Fouirnaies, Alexander, and Andrew B. Hall. 2018. "How Do Interest Groups Seek Access to Committees?" American Journal of Political Science 62(1): 132–47. [[link](https://test.followthemoney.org/assets/Uploads/Fouirnaies-Hall-2018-American-Journal-of-Political-Science.pdf)]
+- Li, Zhao. 2018. "How Internal Constraints Shape Interest Group Activities: Evidence from Access-Seeking PACs." American Political Science Review 112(4): 792–808. [[link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3062836)]
+- Magaloni, Beatriz, Edgar Franco-Vivanco, and Vanessa Melo. 2020. "Killing in the Slums: Social Order, Criminal Governance, and Police Violence in Rio de Janeiro." American Political Science Review 114(2): 552–72. [[link](http://bmagaloni.com/storage/uploads/publications/APSR_Killing.final_01JUN2002.pdf.pdf)]
+- Malesky, Edmund J., Cuong Viet Nguyen, and Anh Tran. 2014. "The Impact of Recentralization on Public Services: A Difference-in-Differences Analysis of the Abolition of Elected Councils in Vietnam." American Political Science Review 108(1): 144–68. [[link](https://sites.duke.edu/malesky/files/2014/07/TheImpactofRecentralization.pdf)]
 
 _Difference-in-Differences with multiple periods_
 
@@ -92,7 +104,7 @@ _Non-linear DiD, different types of outcome variable, etc_
 _Review_
 - Abadie, Alberto. 2020. "Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects." Forthcoming in Journal of Economic Literature. [[link](https://www.aeaweb.org/content/file?id=12409)]
 
-_Canonical papers_
+_Canonical applications_
 - Abadie, Alberto, and Javier Gardeazabal. 2003. "The Economic Costs of Conflict: A Case Study of the Basque Country." American Economic Review 93(1): 113–32. [[link](https://www.fsb.miamioh.edu/lij14/411_scm2.pdf)]
 - Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." Journal of the American Statistical Association 105(490): 493–505. [[link](https://www.ifs.org.uk/docs/abadiesyntheticcontrolmethods.pdf)]
 - Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. "Comparative Politics and the Synthetic Control Method." American Journal of Political Science 59(2): 495–510. [[link](https://web.stanford.edu/~jhain/Paper/AJPS2015a.pdf)]
