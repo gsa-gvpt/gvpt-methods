@@ -39,17 +39,17 @@ To install each R package, please visit each of their "vignette" page. To instal
 - :exclamation: "did_multiplegt" (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458643.html), [paper](https://arxiv.org/pdf/1803.08807.pdf)]
 - :exclamation: "did" (R package) [[vignette](https://github.com/bcallaway11/did), [paper](https://arxiv.org/pdf/1803.09015.pdf)]
 - "synthdid" (R package) [[vignette](https://github.com/synth-inference/synthdid), [paper](https://arxiv.org/pdf/1812.09970.pdf)]
-- "fuzzydid" (STATA command) [[vignette](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado), [paper [1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf) and [2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf)]
+- "fuzzydid" (STATA command) [[vignette](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado), paper ([1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf)) and ([2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf))]
 - "orddid" (R package) [[vignette](https://github.com/soichiroy/orddid), [paper](https://arxiv.org/pdf/2009.13404.pdf)]
 
 ### Two-way fixed effects
 
-- :exclamation: "fect" (R package) [[vignette](http://yiqingxu.org/software/fect/fect.html),[companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3555463)]
-- :exclamation: "twowayfeweights" (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458611.html),[companion paper](https://arxiv.org/pdf/1803.08807.pdf)]
-- "wfe" (R package) [[vignette](https://cran.r-project.org/web/packages/wfe/wfe.pdf),[companion paper](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)]
-- "PanelMatch" (R package) [[vignette](https://github.com/insongkim/PanelMatch),[companion paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
-- "tjbal" (R package) [[vignette](http://yiqingxu.org/software/tjbal/tjbal.html),[companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)]
-- "gsynth" (R package) [[vignette](http://yiqingxu.org/software/gsynth/gsynth_examples.html),[companion paper](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)]
+- :exclamation: "fect" (R package) [[vignette](http://yiqingxu.org/software/fect/fect.html), [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3555463)]
+- :exclamation: "twowayfeweights" (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458611.html), [paper](https://arxiv.org/pdf/1803.08807.pdf)]
+- "wfe" (R package) [[vignette](https://cran.r-project.org/web/packages/wfe/wfe.pdf), [paper](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)]
+- "PanelMatch" (R package) [[vignette](https://github.com/insongkim/PanelMatch), [paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
+- "tjbal" (R package) [[vignette](http://yiqingxu.org/software/tjbal/tjbal.html), [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)]
+- "gsynth" (R package) [[vignette](http://yiqingxu.org/software/gsynth/gsynth_examples.html), [paper](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)]
 
 ## Reading list
 
