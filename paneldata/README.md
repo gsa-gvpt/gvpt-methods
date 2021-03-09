@@ -8,7 +8,7 @@ Last updated: March 8, 2021
 
 A video of the presentation can be found [here](https://www.dropbox.com/s/0dwhfvulb6owaed/causal-inference-panel-data-kpark-xwang.mp4?dl=0).
 
-Slides used for presentation are available [here]().
+Shorter version of slides used for presentation are available [here](https://github.com/EandrewJones/gvpt-methods/blob/master/paneldata/slides_paneldata_short.pdf).
 
 ## Description
 
@@ -26,7 +26,7 @@ In this workshop, we discuss both classic and recent literature on causal infere
 ### Visualizing Panel Data Structure
 
 - ["panelView"](http://yiqingxu.org/software/panelView/panelView.html)
-- ["PanelMatch"](https://github.com/insongkim/PanelMatch) [Companion paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)
+- ["PanelMatch"](https://github.com/insongkim/PanelMatch) [[Companion paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
 
 ### DiD Design
 
@@ -34,23 +34,24 @@ In this workshop, we discuss both classic and recent literature on causal infere
 - ["did"](https://github.com/bcallaway11/did) [[Companion paper](https://arxiv.org/pdf/1803.09015.pdf)]
 - ["synthdid"](https://github.com/synth-inference/synthdid) [[Companion paper](https://arxiv.org/pdf/1812.09970.pdf)]
 - ["DiDdesign"](https://github.com/naoki-egami/DIDdesign) [[Companion paper](https://arxiv.org/pdf/2102.09948.pdf)]
-- ["fuzzydid"](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado) (STATA command) [Companion paper [1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf) and [2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf)]
+- ["fuzzydid"](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado) (STATA command) Companion paper [[1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf)] and [[2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf)]
 - ["orddid"](https://github.com/soichiroy/orddid) [[Companion paper](https://arxiv.org/pdf/2009.13404.pdf)]
 
 ### Two-way fixed effects
 
-- ["fect"](http://yiqingxu.org/software/fect/fect.html) [Companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3555463)
-- ["wfe"](https://cran.r-project.org/web/packages/wfe/wfe.pdf)] [Companion paper](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)
+- ["fect"](http://yiqingxu.org/software/fect/fect.html) [[Companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3555463)]
+- ["wfe"](https://cran.r-project.org/web/packages/wfe/wfe.pdf)] [[Companion paper](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)]
 - [twowayfeweights](https://ideas.repec.org/c/boc/bocode/s458611.html) (STATA command) [[Companion paper](https://arxiv.org/pdf/1803.08807.pdf)]
-- ["PanelMatch"](https://github.com/insongkim/PanelMatch) [Companion paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)
-- ["tjbal"](http://yiqingxu.org/software/tjbal/tjbal.html) [Companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)
-- ["gsynth"](http://yiqingxu.org/software/gsynth/gsynth_examples.html) [Companion paper](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)
+- ["PanelMatch"](https://github.com/insongkim/PanelMatch) [[Companion paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
+- ["tjbal"](http://yiqingxu.org/software/tjbal/tjbal.html) [[Companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)]
+- ["gsynth"](http://yiqingxu.org/software/gsynth/gsynth_examples.html) [[Companion paper](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)]
 
 ## Reading list
 
 ### Difference-in-Differences
 
 - Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Ch. 5.
+
 - Callaway, Brantly, and Pedro H. C. Sant'Anna. 2020. ["Difference-in-Differences with Multiple Time Periods."](https://arxiv.org/pdf/1803.09015.pdf) Forthcoming in Journal of Econometrics.
 - Sun, Liyang, and Sarah Abraham. 2021. ["Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects."](https://arxiv.org/pdf/1804.05785.pdf) Forthcoming in Journal of Econometrics.
 - Goodman-Bacon, Andrew. 2020. ["Difference-in-Differences with Variation in Treatment Timing."](http://goodman-bacon.com/pdfs/ddtiming.pdf) Working paper.
