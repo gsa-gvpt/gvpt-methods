@@ -2,13 +2,14 @@
 
 [Xiaonan Wang](https://github.com/Xiaonan21) and [Kee Hyun Park](https://github.com/keehyunpark)
 
-Last updated: March 8, 2021
+Last updated: March 9, 2021
+
 
 ## Video and Slides
 
 A video of the presentation can be found [here](https://www.dropbox.com/s/0dwhfvulb6owaed/causal-inference-panel-data-kpark-xwang.mp4?dl=0).
 
-Shorter version of slides used for presentation are available [here](https://github.com/EandrewJones/gvpt-methods/blob/master/paneldata/slides_paneldata_short.pdf). Please note that all the references used for the presentation are included in the last 3 pages of the slides.
+Shorter version of slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/paneldata/slides_paneldata_short.pdf). Please note 
 
 ## Description
 
@@ -39,25 +40,38 @@ To install each R package, please visit each of their "vignette" page. To instal
 - :exclamation: "did_multiplegt" (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458643.html), [paper](https://arxiv.org/pdf/1803.08807.pdf)]
 - :exclamation: "did" (R package) [[vignette](https://github.com/bcallaway11/did), [paper](https://arxiv.org/pdf/1803.09015.pdf)]
 - "synthdid" (R package) [[vignette](https://github.com/synth-inference/synthdid), [paper](https://arxiv.org/pdf/1812.09970.pdf)]
-- "fuzzydid" (STATA command) [[vignette](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado), [paper [1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf) and [2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf)]
+- "fuzzydid" (STATA command) [[vignette](http://fmwww.bc.edu/repec/bocode/f/fuzzydid.ado), paper ([1](https://faculty.crest.fr/xdhaultfoeuille/wp-content/uploads/sites/9/2019/09/fuzzydid_stata.pdf)) and ([2](http://www.restud.com/wp-content/uploads/2017/08/MS19615manuscript.pdf))]
 - "orddid" (R package) [[vignette](https://github.com/soichiroy/orddid), [paper](https://arxiv.org/pdf/2009.13404.pdf)]
 
 ### Two-way fixed effects
 
-- :exclamation: "fect" (R package) [[vignette](http://yiqingxu.org/software/fect/fect.html),[companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3555463)]
-- :exclamation: "twowayfeweights" (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458611.html),[companion paper](https://arxiv.org/pdf/1803.08807.pdf)]
-- "wfe" (R package) [[vignette](https://cran.r-project.org/web/packages/wfe/wfe.pdf),[companion paper](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)]
-- "PanelMatch" (R package) [[vignette](https://github.com/insongkim/PanelMatch),[companion paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
-- "tjbal" (R package) [[vignette](http://yiqingxu.org/software/tjbal/tjbal.html),[companion paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)]
-- "gsynth" (R package) [[vignette](http://yiqingxu.org/software/gsynth/gsynth_examples.html),[companion paper](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)]
+- :exclamation: "fect" (R package) [[vignette](http://yiqingxu.org/software/fect/fect.html), [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3555463)]
+- :exclamation: "twowayfeweights" (STATA command) [[vignette](https://ideas.repec.org/c/boc/bocode/s458611.html), [paper](https://arxiv.org/pdf/1803.08807.pdf)]
+- "wfe" (R package) [[vignette](https://cran.r-project.org/web/packages/wfe/wfe.pdf), [paper](https://imai.fas.harvard.edu/research/files/FEmatch.pdf)]
+- "PanelMatch" (R package) [[vignette](https://github.com/insongkim/PanelMatch), [paper](https://imai.fas.harvard.edu/research/files/tscs.pdf)]
+- "tjbal" (R package) [[vignette](http://yiqingxu.org/software/tjbal/tjbal.html), [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3214231)]
+- "gsynth" (R package) [[vignette](http://yiqingxu.org/software/gsynth/gsynth_examples.html), [paper](http://yiqingxu.org/papers/english/2016_Xu_gsynth/Xu_PA_2017.pdf)]
 
 ## Reading list
 
+### Potential Outcomes Framework
+
+- :exclamation: Imbens, Guido W., and Donald B. Rubin. 2015. _Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction_. Cambridge University Press, Ch 1.
+- :exclamation: Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Chs. 1-2.
+- Holland, Paul W. 1986. "Statistics and Causal Inference." Journal of the American Statistical Association} 81(396): 945–60. [[link](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1045.9886&rep=rep1&type=pdf)]
+
 ### Difference-in-Differences
 
-_Basics_
+_DiD Basics_
 
-- Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Ch. 5.
+- Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Ch. 5.2.
+
+_Selected recent applications from Political Science_
+
+- Fouirnaies, Alexander, and Andrew B. Hall. 2018. "How Do Interest Groups Seek Access to Committees?" American Journal of Political Science 62(1): 132–47. [[link](https://test.followthemoney.org/assets/Uploads/Fouirnaies-Hall-2018-American-Journal-of-Political-Science.pdf)]
+- Li, Zhao. 2018. "How Internal Constraints Shape Interest Group Activities: Evidence from Access-Seeking PACs." American Political Science Review 112(4): 792–808. [[link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3062836)]
+- Magaloni, Beatriz, Edgar Franco-Vivanco, and Vanessa Melo. 2020. "Killing in the Slums: Social Order, Criminal Governance, and Police Violence in Rio de Janeiro." American Political Science Review 114(2): 552–72. [[link](http://bmagaloni.com/storage/uploads/publications/APSR_Killing.final_01JUN2002.pdf.pdf)]
+- Malesky, Edmund J., Cuong Viet Nguyen, and Anh Tran. 2014. "The Impact of Recentralization on Public Services: A Difference-in-Differences Analysis of the Abolition of Elected Councils in Vietnam." American Political Science Review 108(1): 144–68. [[link](https://sites.duke.edu/malesky/files/2014/07/TheImpactofRecentralization.pdf)]
 
 _Difference-in-Differences with multiple periods_
 
@@ -91,7 +105,7 @@ _Non-linear DiD, different types of outcome variable, etc_
 _Review_
 - Abadie, Alberto. 2020. "Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects." Forthcoming in Journal of Economic Literature. [[link](https://www.aeaweb.org/content/file?id=12409)]
 
-_Canonical papers_
+_Canonical applications_
 - Abadie, Alberto, and Javier Gardeazabal. 2003. "The Economic Costs of Conflict: A Case Study of the Basque Country." American Economic Review 93(1): 113–32. [[link](https://www.fsb.miamioh.edu/lij14/411_scm2.pdf)]
 - Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." Journal of the American Statistical Association 105(490): 493–505. [[link](https://www.ifs.org.uk/docs/abadiesyntheticcontrolmethods.pdf)]
 - Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. "Comparative Politics and the Synthetic Control Method." American Journal of Political Science 59(2): 495–510. [[link](https://web.stanford.edu/~jhain/Paper/AJPS2015a.pdf)]
@@ -104,7 +118,7 @@ _Recent advances_
 
 _Basics_
 
-- Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Ch 5.1 & 8.
+- Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Chs 5.1 & 8.
 - Blackwell, Matthew, and Adam Glynn. 2018. "How to Make Causal Inferences with Time-Series Cross-Sectional Data under Selection on Observables." American Political Science Review 112(4): 1067–82. [[link](https://www.mattblackwell.org/files/papers/causal-tscs.pdf)]
 
 _Inference under heterogenous treatment effects_

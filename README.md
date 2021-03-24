@@ -3,7 +3,7 @@
 __2020-2021 Maintainers:__
 - [Evan A. Jones](https://github.com/EandrewJones)
 - [Kee Hyun Park](https://github.com/keehyunpark)
-- Xiaonan Wang
+- [Xiaonan Wang](https://github.com/Xiaonan21)
 
 ### Fall 2020 Series
 
@@ -17,6 +17,8 @@ __2020-2021 Maintainers:__
 
 ### Spring 2021 Series
 
-1. [A (Brief) Introduction to Causal Inference](https://github.com/EandrewJones/gvpt-methods/tree/master/CI_intro)
-2. [Causal Inference with Panel Data](https://github.com/EandrewJones/gvpt-methods/tree/master/paneldata)
-3. [Introduction to Instrumental Variable Strategy](https://github.com/EandrewJones/gvpt-methods/tree/master/instrumentalvariables)
+1. [A (Brief) Introduction to Causal Inference](https://github.com/gsa-gvpt/gvpt-methods/tree/master/CI_intro)
+2. [Causal Inference with Panel Data](https://github.com/gsa-gvpt/gvpt-methods/tree/master/paneldata)
+3. [Introduction to Instrumental Variable Strategy](https://github.com/gsa-gvpt/gvpt-methods/tree/master/instrumentalvariables)
+4. Regression Discontinuity Designs
+5. Experimental Designs
