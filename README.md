@@ -18,4 +18,5 @@ __2020-2021 Maintainers:__
 ### Spring 2021 Series
 
 1. [A (Brief) Introduction to Causal Inference](https://github.com/EandrewJones/gvpt-methods/tree/master/CI_intro)
-
+2. [Causal Inference with Panel Data](https://github.com/EandrewJones/gvpt-methods/tree/master/paneldata)
+3. [Introduction to Instrumental Variable Strategy](https://github.com/EandrewJones/gvpt-methods/tree/master/instrumentalvariables)
