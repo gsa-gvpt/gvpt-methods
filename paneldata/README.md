@@ -4,12 +4,11 @@
 
 Last updated: March 9, 2021
 
-
 ## Video and Slides
 
 A video of the presentation can be found [here](https://www.dropbox.com/s/0dwhfvulb6owaed/causal-inference-panel-data-kpark-xwang.mp4?dl=0).
 
-Shorter version of slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/paneldata/slides_paneldata_short.pdf). Please note 
+Shorter version of slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/paneldata/slides_paneldata_short.pdf). Please note that all the references used for the presentation are included in the last 3 pages of the slides.
 
 ## Description
 
