@@ -57,7 +57,7 @@ To install each R package, please visit each of their "vignette" page. To instal
 
 - :exclamation: Imbens, Guido W., and Donald B. Rubin. 2015. _Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction_. Cambridge University Press, Ch 1.
 - :exclamation: Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. _Mostly Harmless Econometrics: An Empiricist's Companion_. Princeton University Press, Chs. 1-2.
-- Holland, Paul W. 1986. "Statistics and Causal Inference." Journal of the American Statistical Association} 81(396): 945–60. [[link](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1045.9886&rep=rep1&type=pdf)]
+- Holland, Paul W. 1986. "Statistics and Causal Inference." Journal of the American Statistical Association 81(396): 945–60. [[link](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1045.9886&rep=rep1&type=pdf)]
 
 ### Difference-in-Differences
 
