@@ -1,6 +1,6 @@
 # Causal Inference with Regression Discontinuity Designs
 
-Chase Englung
+Chase Englund
 
 Last updated: April 7, 2021
 
