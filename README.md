@@ -21,4 +21,4 @@ __2020-2021 Maintainers:__
 2. [Causal Inference with Panel Data](https://github.com/gsa-gvpt/gvpt-methods/tree/master/paneldata)
 3. [Introduction to Instrumental Variable Strategy](https://github.com/gsa-gvpt/gvpt-methods/tree/master/instrumentalvariables)
 4. [Regression Discontinuity Designs](https://github.com/gsa-gvpt/gvpt-methods/tree/master/regressiondiscontinuity)
-5. Experimental Designs
+5. [Experimental Designs](https://github.com/gsa-gvpt/gvpt-methods/tree/master/experiments)
