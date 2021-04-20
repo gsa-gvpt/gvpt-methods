@@ -20,13 +20,13 @@ In this workshop, we provide a practical introduction to experimental research d
 4. Performing Randomization checks
 5. Select Advanced Issues: using covariates (CATEs); block randomization.
 6. Practical Steps
-  1. IRB
-  2. Pre-registration
-  3. Power-analyses
-  4. GVPT Experimental Lab
-  5. Survey Firms
-  6. Other Fielding Options
-  7. Funding Sources 
+    1. IRB
+    2. Pre-registration
+    3. Power-analyses
+    4. GVPT Experimental Lab
+    5. Survey Firms
+    6. Other Fielding Options
+    7. Funding Sources 
 
 ## Funding Sources
 
