@@ -12,7 +12,7 @@ A video of the presentation can be found [here](https://www.dropbox.com/s/zndoq6
 
 ## Description
 
-This presentation presents web scraping as a method for collection information of interest off of internet pages. It 
+This presentation presents web scraping as a method for collection information of interest off of internet pages.
 
 - Evan Jones introduces some of the basic packages and tools available in the R language for web scraping and interfacing with APIs. Particular attention is paid to understanding the structure of websites and how they operate so that participants feel comfortable extrapolating beyond the presented example to their own use cases. 
 
