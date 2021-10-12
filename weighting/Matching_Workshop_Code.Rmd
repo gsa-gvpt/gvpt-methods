@@ -1,0 +1,322 @@
+---
+title: "R Notebook"
+output: html_notebook
+author: "Lizzie Irlbacher"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Set up 
+
+```{r}
+rm(list=ls())
+setwd("~/casual Inference")
+set.seed(99)
+```
+
+Opening Packages
+```{r}
+library(foreign)
+library(boot)
+library(optmatch)
+library(knitr)
+```
+Data was taken from Steiner, Clark, and Steiner 2008. Much of the code is from EDMS 647 with Peter Schneirer in Spring 2020. Any mistakes are my own. 
+
+Reading in the Data
+```{r}
+scs <- read.spss("shadish&clark_imputed_QE_nooutcome.sav", to.data.frame=TRUE)
+scs.out <- read.spss("shadish&clark_imputed_QE.sav", to.data.frame=TRUE)
+```
+
+```{r}
+#functions we need later
+select.diff <- function(x, grp, wt = rep(1, length(x))) 
+{
+   # computes balance statistics: standardized mean difference and variance ratio
+   # and performs a regression test
+   # also works for dichotomeous categorical variables (but not for more than two categories)
+   # x    ... baseline covariate
+   # grp  ... grouping variable (treatment/assignment) - factor
+   # wt   ... weights (typically inverse-propensity or PS-strata weights)
+
+   if (is.factor(grp)) grp <- as.numeric(grp) - 1     # transform dichotomeous factor into dummy
+   if (is.factor(x)) x <- as.numeric(x) - 1           # transform dichotomeous factor into dummy
+   stat.wt <- function(xw) {                          # function computing weighted mean and variance
+      out <- cov.wt(xw[, 1, drop = F], xw[, 2])
+      c(mean.wt = out$center, var.wt = out$cov)
+   }
+   stat <- unlist(by(cbind(x, wt), grp, stat.wt))     # weighted mean and variance (vector)
+   m <- stat[seq(1, 4, by = 2)]                       # extract means
+   v <- stat[seq(2, 4, by = 2)]                       # extract variances
+   B <- (m[2] - m[1]) / sqrt(sum(v) / 2)              # standardized difference in means
+   R <- v[2] / v[1]                                   # variance ratio
+   rslt <- summary(lm(x ~ grp, weights = wt))         # run regression test
+   res <- c(rslt$coef[2, c(1:2, 4)], B, R)
+   names(res) <- c("Mean.Diff", "Std.Error", "p-value", "Std.Mean.Diff", "Var.Ratio")
+   res
+}
+
+
+overlap <- function(x, z, lab = NULL, bin = 20)
+{
+   # plot a histogram of a covariate by group
+   # x   ... numeric vector (covariate)
+   # z   ... treatment indicator (dummy)
+   # lab ... label for title and x-axis
+   # bin ... number of bins for histogram
+ 
+   r1 <- range(x)
+   if (!is.numeric(z)) z <- as.numeric(z) - 1
+   c.dat <- hist(x[z == 0], seq(r1[1], r1[2], length = bin), plot = F)  # histogram data for control group
+   t.dat <- hist(x[z == 1], seq(r1[1], r1[2], length = bin), plot = F)  # histogram data for treatm. group
+   t.dat$counts <- -t.dat$counts
+   plot(c.dat, axes = F, ylim = c(min(t.dat$counts), max(c.dat$counts)),
+        main = lab, xlab = lab)
+   plot(t.dat, add = TRUE, density = 30)
+   axis(1)
+   ax.loc <- axis(2, labels = F)
+   axis(2, at = ax.loc, labels = abs(ax.loc))
+   y <- par('usr')[3:4]
+   text(rep(max(x), 2), c(y[2] - diff(y)*.05, y[1] + diff(y)*.05), 
+        c('Control', 'Treatment'), adj = 1, xpd = T)
+}
+
+
+dnsty <- function(x, grp, wt = rep(1, length(x)), main = NULL, 
+                  lwd = 1, col.vec = c('blue', 'red'), ...) 
+{
+   # plots kernel-density estimates for groups
+   # x   ... metric variable
+   # grp ... grouping variable (factor)
+   # wt  ... weights for observations (e.g., inverse-propensity weights or survey weights)
+
+   lev <- levels(grp)
+   cmplt <- na.omit(data.frame(x, grp, wt))
+   x <- cmplt$x
+   grp <- cmplt$grp
+   wt <- cmplt$wt
+   dens <- list()
+   x.m <- rep(NA, length(table(grp)))
+   bw <- density(x, weights = wt / sum(wt))$bw
+   for (i in 1:length(table(grp))) {
+      grp.ind <- grp == lev[i]
+      dens[[i]] <- if (is.null(wt)) density(x[grp == lev[i]], ...) else
+                  density(x[grp.ind], na.rm = T, weights = wt[grp.ind] / sum(wt[grp.ind]), bw = bw, ...)
+      x.m[i] <- weighted.mean(x[grp.ind], w = wt[grp.ind]) 
+   }
+   plot(dens[[1]], type = 'n', main = main, xlab = '', ylab = '', yaxt = 'n',
+        ylim = c(0, max(c(dens[[1]]$y, dens[[2]]$y))), 
+        xlim = range(c(dens[[1]]$x, dens[[2]]$x)), bty = 'l')
+   for (i in 1:length(table(grp))) {
+      grp.ind <- grp == lev[i]
+      ind <- dens[[i]]$x - x.m[i]
+      lines(dens[[i]], col = col.vec[i], lwd = lwd, lty = 3 - i, xpd = T)
+      lines(rep(x.m[i], 2), c(0, dens[[i]]$y[abs(ind) == min(abs(ind))][1]), col = col.vec[i], lwd = lwd, lty = 3)
+   }
+}
+
+
+discard <- function(lps, grp, caliper = .05)
+{
+   # creates an index for discarding non-overlapping cases (with caliper)
+   # returns logical vector (F = overlapping, T = non-overlapping)
+   # lps     ... propensity score logit
+   # grp     ... treatment indicator
+   # caliper ... caliper in SD of lps
+
+   ovl <- max(tapply(lps, grp, min)) - sd(lps) * caliper   # left limit of overlap
+   ovr <- min(tapply(lps, grp, max)) + sd(lps) * caliper   # right limit of overlap
+   ind <- lps > ovr | lps < ovl
+   cat('Number of non-overlapping cases:', sum(ind), '::: breaks:', ovl, ovr, '\n')
+   ind
+}
+```
+
+```{r}
+table(scs$vm)     # frequency distribution
+
+# change coding of the treatment variable such that Match is reference and vocab is treatment
+# (R automatically uses the first factor level as reference category)
+scs$vm <- relevel(scs$vm, ref = 'Mathematics')
+
+# ::::: create a vector with names of covariates (for checking imbalance) ::::: 
+# adjustment set according to the causal graph
+adj.set <- c("mathpre", "vocabpre", "actcomp", "hsgpaar", "collgpaa",
+             "numbmath", "likemath", "likelit", "preflit", "majormi", "mars", 
+             "cauc", "afram", "other", "male","beck")
+
+# all covariates (the entire "kitchen sink")
+all.set <- c("mathpre", "vocabpre", "actcomp", "hsgpaar", "collgpaa",
+             "numbmath", "likemath", "likelit", "preflit", "majormi", "mars", 
+             "cauc", "afram", "other", "male",
+             "pextra", "pagree", "pconsc", "pemot", "pintell", "beck",
+             "age", "married", "momdegr", "daddegr", "credit")
+
+summary(scs[, all.set])
+
+imbal <- t(sapply(scs[, all.set], select.diff, grp = scs$vm))
+round(imbal, 3)
+```
+
+```{r}
+# two examples: selection difference in vocabpre and male
+select.diff(scs$vocabpre, scs$vm)
+select.diff(scs$male, scs$vm)
+
+B <- imbal[, "Std.Mean.Diff"]
+R <- imbal[, "Var.Ratio"]
+
+# add labels for imbalanced covariates
+plot(B, R, xlim = c(-1, 1), pch = 16,
+   main = 'Figure 1: Initial Imbalance', xlab = 'Std. Mean Difference', ylab = 'Variance Ratio')
+abline(h = 1, v = 0)
+abline(h = c(4/5, 5/4), v = c(-.1, .1), lty = 3)   # add Rubin's benchmarks
+
+ind <- (abs(B) > .1 | R < 4/5 | R > 5/4) 
+text(B[ind], R[ind], all.set[ind], pos = 2 + 2*(B[ind] > 0), offset = .4, cex = .7, xpd = T)
+```
+Examination of all the covariates before weights are calculated
+```{r}
+
+for (i in 1:length(all.set))
+{
+   if ((i-1) %% 6 == 0) {x11(); par(mfrow = c(2, 3))} # creates a plotting window for 6 plots
+   nam <- all.set[i]
+   x <- scs[, nam]
+   if (!is.numeric(x)) x <- as.numeric(x)
+   overlap(x, scs$vm, nam)
+}
+
+for (i in 1:length(all.set))
+{
+   if ((i-1) %% 6 == 0) {x11(); par(mfrow = c(2, 3))} # creates a plotting window for 6 plots
+   nam <- all.set[i]
+   x <- scs[, nam]
+   if (!is.numeric(x)) x <- as.numeric(x)
+   dnsty(x, scs$vm, main = nam)
+}
+```
+
+```{r}
+#propensty score examination
+# use covariates of adjustment set (adj.set) only!
+mdl1 <- as.formula(vm ~ mathpre + vocabpre + actcomp + hsgpaar + collgpaa +
+                        numbmath + likemath + likelit + preflit + majormi +
+                        mars + cauc + afram + male) 
+
+out1 <- glm(mdl1, data = scs, family = 'binomial')
+summary(out1)
+
+# ::::: get PS and PS-logit of initial model :::::
+scs$ps <- out1$fitted                        # fitted values are the PS
+scs$lps <- log(scs$ps / (1 - scs$ps))        # PS-logit = log(PS/(1-PS))
+
+# ::::: plot distribution of PS and logit(PS) :::::
+hist(scs$ps, breaks = 30)
+hist(scs$lps, breaks = 30)
+
+# ::::: check overlap on PS-logit :::::
+overlap(scs$ps, scs$vm, bin = 30)            # the lack of overlap is better
+overlap(scs$lps, scs$vm, bin = 30)           # seen in the plot with the logits
+
+# ::::: create index for deleting non-overlapping cases :::::
+(del.ind <- discard(scs$lps, scs$vm, caliper = .05))
+overlap(scs$lps[!del.ind], scs$vm[!del.ind], bin = 30)
+```
+
+Inverse propensity weighting
+```{r}
+scs$z <- ifelse(scs$vm == 'Vocabulary', 1, 0)     # dummy variable for treatment indicator
+scs$iptw <- with(scs, z / ps + (1 - z) / (1 - ps)) # computation of IPTWs
+
+# ::::: compute weights for overlapping cases only :::::
+scs$iptwo <- scs$iptw
+scs$iptwo[del.ind] <- 0
+
+# -> check balance on all baseline covariates (also the ones not in the model)
+
+# ::::: apply select.diff() to all covariates: "imbalance statistics" :::::
+(imbal <- t(sapply(scs[, all.set], select.diff, grp = scs$vm, wt = scs$iptw)))
+# (imbal <- t(sapply(scs[, all.set], select.diff, grp = scs$vm, wt = scs$iptwo))) # for overlapping cases
+```
+
+```{r}
+# ::::: plot standardized mean difference & variance ratio :::::
+B <- imbal[, "Std.Mean.Diff"]
+R <- imbal[, "Var.Ratio"]
+plot(B, R, xlim = c(-1, 1), pch = 16,
+   main = 'Figure 2: Imbalance for Weighted PS', xlab = 'Std. Mean Difference', ylab = 'Variance Ratio')
+abline(h = 1, v = 0)
+abline(h = c(4/5, 5/4), v = c(-.1, .1), lty = 3)
+
+# ::::: add labels for imbalanced covariates :::::
+ind <- (abs(B) > .1 | R < 4/5 | R > 5/4) 
+text(B[ind], R[ind], all.set[ind], pos = 2 + 2*(B[ind] > 0), offset = .4, cex = .7, xpd = T)
+
+```
+
+Examination of distribution for each weight after Inverse Propensity Score is put into effect. Brings the average into alignment for the test and control group for each variable
+```{r}
+for (i in 1:length(all.set))
+{
+   if ((i-1) %% 6 == 0) {x11(); par(mfrow = c(2, 3))} # creates a plotting window for 6 plots
+   nam <- all.set[i]
+   x <- scs[, nam]
+   if (!is.numeric(x)) x <- as.numeric(x)
+   dnsty(x, scs$vm, wt = scs$iptw, main = nam)
+}
+
+# ::::: check balance and overlap for the logit of the PS :::::
+dnsty(scs$lps, scs$vm, wt = scs$iptw, main = "PS logit")
+```
+
+Basic models 
+```{r}
+scs$vocaball <- scs.out$vocaball
+
+# ::::: prima facie effect, i.e., without any PS or covariance adjustment (biased estimate) ::::
+testmodel <- lm(vocaball ~ vm, data = scs)
+summary(testmodel)
+
+# ::::: ATE with PS adjustment: inverse-propensity weighting :::::
+inversebase <- lm(vocaball ~ vm, data = scs, weights = iptw)  # with all cases
+summary(lm(vocaball ~ vm, data = scs, weights = iptwo))  # with overlapping cases
+```
+
+Double robust
+```{r}
+# ::::: ATE with additional covariance adjustment (doubly robust or mixed method) :::::
+# create formula for outcome model (use same covariates as in PS model)
+inversePSmdl <- as.formula(vocaball ~ vm + mathpre + vocabpre + actcomp + hsgpaar + collgpaa + numbmath + likemath + likelit + preflit + majormi + mars + cauc + afram + male)
+inversedouble <- lm(inversePSmdl, data = scs, weights = iptw)
+```
+
+Sensitivity Analysis- Bootstrapping
+```{r}
+PSboot <- function(bdat, i)
+{
+   # draw bootstrap sample (done by the boot() function)
+   bsmpl <- bdat[i, ] 
+   # PS model
+   out1 <- glm(mdl1, data = bsmpl, family = 'binomial')
+   # get PS and compute IPTW
+   bsmpl$ps <- out1$fitted
+   bsmpl$iptw <- with(bsmpl, z / ps + (1 - z) / (1 - ps))
+   res1 <- coef(lm(vocaball ~ vm, data = bsmpl, weights = iptw))[2]
+   res2 <- coef(lm(inversePSmdl, data = bsmpl, weights = iptw))[2]
+
+   c(res1, res2)
+}
+```
+```{r}
+# bootstrap the PS analysis and obtain bootstrap standard errors
+(bootstat <- boot(scs, statistic = PSboot, R = 1000, stype = 'i'))
+
+# obtain 95% confidence intervals from bootstrap distribution
+
+(b.ci <- t(sapply(1:length(bootstat$t0), 
+          function(x) boot.ci(bootstat, index = x, type = 'perc')$percent))[, 4:5])
+```
