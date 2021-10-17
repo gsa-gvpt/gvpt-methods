@@ -8,7 +8,7 @@ Last updated: April 20, 2021
 
 A video of the presentation can be found [here](https://umd.box.com/s/evp2u0qbpk01k3yuywu1x9dt9ub67k9t).
 
-The slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/experiments/ExperimentalResearch.pptx).
+The slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/experiments/ExperimentalResearch.pdf).
 
 ## Description
 
