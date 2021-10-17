@@ -6,7 +6,7 @@ Last updated: November 18, 2020
 
 ## Video
 
-A video of the presentation can be found [here](https://www.dropbox.com/s/xbkh7slx5235rb0/modeling-xwang.mp4?dl=0).
+A video of the presentation can be found [here](https://umd.box.com/s/dpsw7hp8t35v4futbqgi8514gt2js9dw).
 
 ## Description
 
@@ -16,7 +16,7 @@ In the second part of the workshop, he introduces the R packages `modelr`, `broo
 
 ## Materials
 
-The slides are available [here](https://github.com/EandrewJones/gvpt-methods/tree/master/modeling/Slides.html) and related materials are all located in the parent [repository](https://github.com/EandrewJones/gvpt-methods/tree/master/modeling).
+The slides are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/modeling/Slides.html) (recommend downloading it first and then opening the file) and related materials are all located in the parent [repository](https://github.com/gsa-gvpt/gvpt-methods/tree/master/modeling).
 
 ## References
 
