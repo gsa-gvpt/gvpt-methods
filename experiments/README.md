@@ -6,9 +6,9 @@ Last updated: April 20, 2021
 
 ## Video and Slides
 
-A video of the presentation can be found [here](https://www.dropbox.com/s/l1ngmn187ofwg6g/experiments-asafarpour-wbishop-aperkey.mp4?dl=0).
+A video of the presentation can be found [here](https://umd.box.com/s/evp2u0qbpk01k3yuywu1x9dt9ub67k9t).
 
-The slides used for presentation are available [here](https://www.dropbox.com/s/t3fa0rgm3n7aket/ExperimentalResearch.pptx?dl=0).
+The slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/experiments/ExperimentalResearch.pptx).
 
 ## Description
 
