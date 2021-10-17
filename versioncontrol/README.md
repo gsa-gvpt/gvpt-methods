@@ -12,7 +12,7 @@ A video of the presentation can be found [here](https://www.dropbox.com/s/rtwnh4
 
 This repository introduces [Git](https://git-scm.com/) and [GitHub](https://github.com/) as tools of workflow management.
 
-- For introduction, please see "Version Control using Git and GitHub" ([video](https://www.dropbox.com/s/rtwnh4hk7ilo6o2/version-control-khpark.mp4?dl=0), [slides](https://github.com/EandrewJones/gvpt-methods/tree/master/versioncontrol/slides_vc_short.pdf)). The talk covers the concept of version control and a short walkthrough of using basic git commands.
+- For introduction, please see "Version Control using Git and GitHub" ([video](https://umd.box.com/s/0bouj8wp5zn75593nw1jm2uljfbzcukp), [slides](https://github.com/gsa-gvpt/gvpt-methods/blob/master/versioncontrol/slides_vc_short.pdf)). The talk covers the concept of version control and a short walkthrough of using basic git commands.
 
 - I highly recommend taking a look at Jenny Bryan's [Happy Git and GitHub for the useR](https://happygitwithr.com/) and Matthew Gentzkow and Jesse M. Shapiro's [Code and Data for the Social Sciences: A Practitioner’s Guide](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf).
 
