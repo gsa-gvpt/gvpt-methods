@@ -6,9 +6,9 @@ Last updated: April 7, 2021
 
 ## Video and Slides
 
-A video of the presentation can be found [here](https://www.dropbox.com/s/ockdnkm0d1hqdkl/RDD_Chase.mp4?dl=0).
+A video of the presentation can be found [here](https://umd.box.com/s/gf11vbbrwdulzfwkfpwjrn05ekngkfs4).
 
-The slides used for presentation are available [here](https://www.dropbox.com/scl/fi/99ejq653wt5rtq5acghrt/Englung_RegressionDiscontinuityDesigns.pptx?dl=0&rlkey=uys5bflpi9qg0r1031n3sn8wl).
+The slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/regressiondiscontinuity/Englung_RegressionDiscontinuityDesigns.pdf).
 
 ## Description
 
