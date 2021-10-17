@@ -5,7 +5,7 @@ Last updated: December 1, 2020
 
 ## Video
 
-A video of the presentation can be found [here](https://www.dropbox.com/s/hpg4z29wyf9pr2v/data-visualization-ventura.mp4?dl=0).
+A video of the presentation can be found [here](https://umd.box.com/s/dgnrkmkpmhh9brfs7ad4dvpcq2sujq0y).
 
 ## Description
 
