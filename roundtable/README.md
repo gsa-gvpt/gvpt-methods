@@ -12,16 +12,16 @@ Speakers:
 
 ## Video
 
-The video can be found [here](https://www.dropbox.com/s/tj2d6130v60j44h/methods-training-roundtable.mp4?dl=0).
+The video can be found [here](https://umd.box.com/s/tthez5jzdwag1qrdxg3x3cvrk8ygjnhz).
 
 ## Description
 
 In this roundtable, we discuss options for training in methodology beyond the confines of the GVPT department. We're joined by four upper level graduate students--Ted Ellsworth, SoRelle Gaynor, Alauna Safarpour, and Tiago Ventura--in the department who share their experiences attending external programs, reflect on the pros and cons of each, and offer further information on the programs in the documents below:
 
-- [Inter-university Consortium for Political and Social Research & Advancing Research on Conflict](https://www.dropbox.com/s/7mw6akshamexh8s/icpsr-tellsworth.docx?dl=0)
-- [The Institute for Qualitative and Multi-Method Research](https://www.dropbox.com/s/1ncg24flwty3yvl/iqmr-sgaynor.docx?dl=0)
-- [Zurich Summer School for Women in Political Methodology](https://www.dropbox.com/s/feb2f7zo8v4zqz0/zurich-summer-school-for-women-in-political-methodology-asafarpour.docx?dl=0)
-- [Template for a Better Methods Curriculum](https://www.dropbox.com/s/25murkvu3tan1rs/methods-curriculum-template-tventura.docx?dl=0)
+- [Inter-university Consortium for Political and Social Research & Advancing Research on Conflict](https://umd.box.com/s/q8hgwlclv01o8fszfjhqaroyqf8o8qzy)
+- [The Institute for Qualitative and Multi-Method Research](https://umd.box.com/s/bl6fpyoaygaxa3f73xgk86bfd817ygii)
+- [Zurich Summer School for Women in Political Methodology](https://umd.box.com/s/8dlw0qz2r86c73td9rqt8z54koz1z4di)
+- [Template for a Better Methods Curriculum](https://umd.box.com/s/fb16qq2v0wcl9p6pj49vqeddhlj7oazj)
 
 Afterwards, we conclude with audience Q&A.
 
