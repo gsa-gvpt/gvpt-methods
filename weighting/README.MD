@@ -6,7 +6,7 @@ Last updated: October 13, 2021
 
 ## Video and Slides
 
-A video of the presentation can be found [here](https://umd.box.com/s/r4r5wughz61hacmygsv6bcdww31i0tmn). The slides used for the presentation are available [here](https://umd.box.com/s/12mwvbouskugnbl2oggdcqgwv5jbfes0).
+A video of the presentation can be found [here](https://umd.box.com/s/r4r5wughz61hacmygsv6bcdww31i0tmn). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/weighting/causal-inference-weighting-lirlbachergwang.pdf).
 
 ## Description
 
