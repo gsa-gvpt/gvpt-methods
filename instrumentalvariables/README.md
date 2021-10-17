@@ -6,9 +6,9 @@ Last updated: March 24, 2021
 
 ## Video and Slides
 
-A video of the presentation can be found [here](https://www.dropbox.com/s/ve9fsriqh2tf5ei/causal-inference-instrumental-variables-ylee.mp4?dl=0).
+A video of the presentation can be found [here](https://umd.box.com/s/hmhfiw6tplembzavajxiin1z8bvzsunb).
 
-The slides used for presentation are available [here](https://www.dropbox.com/scl/fi/k3olv25p4a9xvaaghewg2/RealFinal_Instrumental-Variable-Strategy_03222021.pptx?dl=0&rlkey=6jf2djkmqgqrb94ygcn8w66a2).
+The slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/instrumentalvariables/RealFinal_Instrumental%20Variable%20Strategy_03222021.pptx).
 
 ## Description
 
