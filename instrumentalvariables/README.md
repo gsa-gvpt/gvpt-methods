@@ -8,7 +8,7 @@ Last updated: March 24, 2021
 
 A video of the presentation can be found [here](https://umd.box.com/s/hmhfiw6tplembzavajxiin1z8bvzsunb).
 
-The slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/instrumentalvariables/RealFinal_Instrumental%20Variable%20Strategy_03222021.pptx).
+The slides used for presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/instrumentalvariables/RealFinal_Instrumental%20Variable%20Strategy_03222021.pdf).
 
 ## Description
 
