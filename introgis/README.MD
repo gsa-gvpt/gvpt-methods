@@ -1,4 +1,4 @@
-# An Introduction to Using Geographic Information Systems in Political Science
+# An Introduction to Using Geographic Information Science in Political Science
 
 Jeff Sauer and Henry Overos
 
