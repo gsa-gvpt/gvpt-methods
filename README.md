@@ -8,7 +8,7 @@ __2021-2022 Maintainers:__
 1. [Case Studies and Quandaries](https://github.com/gsa-gvpt/gvpt-methods/tree/master/casestudies) (Autumn Perky)
 2. [Causal Inference: Weighting Methods](https://github.com/gsa-gvpt/gvpt-methods/tree/master/weighting) (Lizzie Irlbacher and Guan Wang)
 3. [A Very Short Introduction to LaTeX](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX) (Leo Bauer)
-4. Geographic Information Systems (GIS) in political science (Jeff Sauer and Henry Overos)
+4. [Geographic Information Systems (GIS) in political science](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introgis) (Jeff Sauer and Henry Overos)
 5. Working with text data and REGEX (Eric Dunford)
 6. Ethics in political methodology (Ted Ellsworth)
 
