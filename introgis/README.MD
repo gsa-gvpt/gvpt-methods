@@ -6,7 +6,7 @@ Last updated: October 27, 2021
 
 ## Video, slides, and related materials
 
-A video of the presentation can be found [here](https://umd.box.com/s/as3o10eqr5wwulk5kl1rp0smcw7o9cjc). The slides used for the presentation are available [here]().
+A video of the presentation can be found [here](https://umd.box.com/s/as3o10eqr5wwulk5kl1rp0smcw7o9cjc). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/introgis/Overos_Sauer_PoliSci_Methods_2021.pdf).
 
 ## Description
 
