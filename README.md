@@ -1,8 +1,6 @@
 ## UMD Government and Politics Methodology Workshop Series
 
-__2021-2022 Maintainers:__
-- [Henry D. Overos](https://github.com/overos93)
-- [Kee Hyun Park](https://github.com/keehyunpark)
+__2021-2022 Maintainers:__ ([Henry D. Overos](https://github.com/overos93) and [Kee Hyun Park](https://github.com/keehyunpark))
 
 ### Fall 2021 Series
 1. [Case Studies and Quandaries](https://github.com/gsa-gvpt/gvpt-methods/tree/master/casestudies) (Autumn Perky)
@@ -12,10 +10,7 @@ __2021-2022 Maintainers:__
 5. Working with text data and REGEX (Eric Dunford)
 6. Ethics in political methodology (Ted Ellsworth)
 
-__2020-2021 Maintainers:__
-- [Evan A. Jones](https://github.com/EandrewJones)
-- [Kee Hyun Park](https://github.com/keehyunpark)
-- [Xiaonan Wang](https://github.com/Xiaonan21)
+__2020-2021 Maintainers:__ ([Evan A. Jones](https://github.com/EandrewJones), [Kee Hyun Park](https://github.com/keehyunpark), and [Xiaonan Wang](https://github.com/Xiaonan21))
 
 ### Spring 2021 Series
 
