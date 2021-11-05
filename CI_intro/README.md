@@ -6,7 +6,7 @@ Last updated: February 15, 2021
 
 ## Video
 
-A video of the presentation can be found [here](https://www.dropbox.com/s/tz12ci8lt05pgye/causal-inference-intro-jones.mp4?dl=0).
+A video of the presentation can be found [here](https://umd.box.com/s/7j1u57rxioipj6gka8fogqx7xcg48hrx).
 
 ## Description
 
