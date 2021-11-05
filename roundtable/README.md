@@ -12,7 +12,7 @@ Speakers:
 
 ## Video
 
-The video can be found [here](https://umd.box.com/s/tthez5jzdwag1qrdxg3x3cvrk8ygjnhz).
+The video can be found [here](https://umd.app.box.com/file/866939825451?s=tthez5jzdwag1qrdxg3x3cvrk8ygjnhz).
 
 ## Description
 
