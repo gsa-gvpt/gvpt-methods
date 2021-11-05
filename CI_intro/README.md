@@ -6,7 +6,7 @@ Last updated: February 15, 2021
 
 ## Video
 
-A video of the presentation can be found [here](https://umd.box.com/s/7j1u57rxioipj6gka8fogqx7xcg48hrx).
+A video of the presentation can be found [here](https://umd.app.box.com/s/7j1u57rxioipj6gka8fogqx7xcg48hrx).
 
 ## Description
 
