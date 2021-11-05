@@ -23,7 +23,7 @@ __2020-2021 Maintainers:__ ([Evan A. Jones](https://github.com/EandrewJones), [K
 ### Fall 2020 Series
 
 1. [Version Control Using Git and GitHub](https://github.com/EandrewJones/gvpt-methods/tree/master/versioncontrol) (Kee Hyun Park)
-2. [Interviewing](https://github.com/gsa-gvpt/gvpt-methods/tree/master/interviews/) (Hyunki Kim)
+2. [Interviewing](https://github.com/gsa-gvpt/gvpt-methods/tree/master/interviews/) (Hyunki Kim and Connor Copchick)
 3. [Methods Training Roundtable](https://github.com/gsa-gvpt/gvpt-methods/tree/master/roundtable/)
 4. [Data Collection via Web Scraping](https://github.com/gsa-gvpt/gvpt-methods/tree/master/webscraping) (Evan Jones)
 5. [Data Cleaning with the Tidyverse](https://github.com/gsa-gvpt/gvpt-methods/tree/master/datacleaning) (Ted Ellsworth)
