@@ -7,7 +7,7 @@ __2021-2022 Maintainers:__ [Henry D. Overos](https://github.com/overos93) (hover
 2. [Causal Inference: Weighting Methods](https://github.com/gsa-gvpt/gvpt-methods/tree/master/weighting) (Lizzie Irlbacher and Guan Wang)
 3. [A Very Short Introduction to LaTeX](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX) (Leo Bauer)
 4. [Geographic Information Systems (GIS) in political science](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introgis) (Jeff Sauer and Henry Overos)
-5. Working with text data and REGEX (Eric Dunford)
+5. [Tips and Tricks for Optimizing Regex](https://github.com/gsa-gvpt/gvpt-methods/tree/master/regex) (Eric Dunford)
 6. Ethics in political methodology (Ted Ellsworth)
 
 __2020-2021 Maintainers:__ ([Evan A. Jones](https://github.com/EandrewJones), [Kee Hyun Park](https://github.com/keehyunpark), and [Xiaonan Wang](https://github.com/Xiaonan21))
