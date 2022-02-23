@@ -4,7 +4,7 @@ __2021-2022 Maintainers:__ [Henry D. Overos](https://github.com/overos93) (hover
 
 ### Spring 2022 Series
 1. [Introduction to Research Workflows Part I]() (Henry Overos)
-2. [Introduction to Research Workflows Part I]() (Harriet Goers)
+2. [Introduction to Research Workflows Part II]() (Harriet Goers)
 3. [Introduction to Random Forest]() (Oja Pathak)
 4. [Bayesian Process Tracing]() (Tasha Fairfield)
 5. [Computational Social Science Research at Pew Research Center (with discussions on the non-academic job market)]() (Sam Bestvater)
