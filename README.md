@@ -2,6 +2,13 @@
 
 __2021-2022 Maintainers:__ [Henry D. Overos](https://github.com/overos93) (hoveros@terpmail.umd.edu) and [Kee Hyun Park](https://github.com/keehyunpark) (khpark@umd.edu)
 
+### Spring 2022 Series
+1. [Introduction to Research Workflows Part I]() (Henry Overos)
+2. [Introduction to Research Workflows Part I]() (Harriet Goers)
+3. [Introduction to Random Forest]() (Oja Pathak)
+4. [Bayesian Process Tracing]() (Tasha Fairfield)
+5. [Computational Social Science Research at Pew Research Center (with discussions on the non-academic job market)]() (Sam Bestvater)
+
 ### Fall 2021 Series
 1. [Case Studies and Quandaries](https://github.com/gsa-gvpt/gvpt-methods/tree/master/casestudies) (Autumn Perky)
 2. [Causal Inference: Weighting Methods](https://github.com/gsa-gvpt/gvpt-methods/tree/master/weighting) (Lizzie Irlbacher and Guan Wang)
