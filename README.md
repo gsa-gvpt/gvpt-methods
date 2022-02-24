@@ -4,7 +4,7 @@ __2021-2022 Maintainers:__ [Henry D. Overos](https://github.com/overos93) (hover
 
 ### Spring 2022 Series
 1. [Introduction to Research Workflows Part I](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow1) (Henry Overos)
-2. Introduction to Research Workflows Part II (Harriet Goers. Scheduled on Mar 2, 2022)
+2. [Introduction to Research Workflows Part II](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow2) (Harriet Goers. Scheduled on Mar 2, 2022)
 3. Introduction to Random Forest (Oja Pathak. Scheduled on Mar 30, 2022)
 4. Bayesian Process Tracing (Tasha Fairfield. Scheduled on Apr 13, 2022)
 5. Computational Social Science Research at Pew Research Center (with discussions on the non-academic job market) (Sam Bestvater. Scheduled on Apr 27, 2022)
