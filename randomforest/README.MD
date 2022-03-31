@@ -6,9 +6,11 @@ Email: opathak@umd.edu
 
 Last updated: March 31, 2022
 
-## Video
+## Video and Presentation Slides
 
 A video of the presentation can be found [here](https://umd.box.com/s/8vdj0p7oggrd904486jarc6u0qfgff6f).
+
+Slides for the presentation can be found [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/randomforest/RF_intro.pdf).
 
 ## Description
 
