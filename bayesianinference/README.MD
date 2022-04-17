@@ -1,4 +1,4 @@
-# Introduction to Random Forest Models
+# Introduction to Bayesian Inference
 
 Tasha Fairfield
 
