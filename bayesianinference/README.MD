@@ -8,7 +8,7 @@ Last updated: April 17, 2022
 
 ## Video and Presentation Slides
 
-A video of the presentation can be found [here]().
+A video of the presentation can be found [here](https://umd.box.com/s/10us2z5habmcy6jv5ioursahrggpaldq).
 
 ## Description
 
