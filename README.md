@@ -7,7 +7,7 @@ __2021-2022 Maintainers:__ [Henry D. Overos](https://github.com/overos93) (hover
 2. [Introduction to Research Workflows Part II](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow2) (Harriet Goers)
 3. [Introduction to Random Forest](https://github.com/gsa-gvpt/gvpt-methods/tree/master/randomforest) (Oja Pathak)
 4. [Introduction to Bayesian Inference](https://github.com/gsa-gvpt/gvpt-methods/tree/master/bayesianinference) (Tasha Fairfield)
-5. Computational Social Science Research at Pew Research Center (with discussions on the non-academic job market) (Sam Bestvater. Scheduled on Apr 27, 2022)
+5. Data Labs at Pew Research Center: Using Data Science to Study Society, Culture, & Politics (Samuel E. Bestvater. Scheduled on Apr 27, 2022)
 
 ### Fall 2021 Series
 1. [Case Studies and Quandaries](https://github.com/gsa-gvpt/gvpt-methods/tree/master/casestudies) (Autumn Perky)
