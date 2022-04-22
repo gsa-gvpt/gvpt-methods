@@ -1,4 +1,4 @@
-# “Data Labs at Pew Research Center: Using Data Science to Study Society, Culture, & Politics”
+# Data Labs at Pew Research Center: Using Data Science to Study Society, Culture, & Politics
 
 Samuel E. Bestvater
 
