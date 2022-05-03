@@ -2,13 +2,15 @@
 
 Samuel E. Bestvater
 
+E-mail: sam.bestvater@gmail.com
+
 Website: https://bestvater.github.io/
 
-Last updated: April 22, 2022
+Last updated: May 3, 2022
 
 ## Video and Presentation Slides
 
-A video of the presentation can be found [here]().
+A video of the presentation can be found [here](https://umd.box.com/s/jbxleet9yns27j9sh3an8bp1r0wa036h).
 
 ## Summary/Abstract
 
