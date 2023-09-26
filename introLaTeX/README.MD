@@ -2,13 +2,13 @@
 
 Leo Bauer
 
-Last updated: October 20, 2021
+Last updated: September 27, 2023
 
 ## Video, slides, and related materials
 
 A video of the presentation can be found [here](https://umd.box.com/s/41q3ysw9e1kka035lw68xqsnplzhkxh6). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/introLaTeX/A%20Very%20Short%20Introduction%20to%20LaTeX.pdf).
 
-Useful templates ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Templates)), cheatsheets ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Cheat%20Sheets)), and bibliography style files ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Bibliography%20Style%20Files)) are also available.
+Useful templates ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Templates)) and cheatsheets ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Cheat%20Sheets)) are also available.
 
 ## Description
 
