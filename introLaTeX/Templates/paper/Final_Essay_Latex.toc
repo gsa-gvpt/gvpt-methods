@@ -1,6 +1,0 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}The Puzzle}{3}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Research Question}{3}{subsubsection.1.1.1}%
-\contentsline {paragraph}{Overview}{3}{paragraph*.1}%
-\contentsline {subparagraph}{Small Overview}{3}{subparagraph*.2}%
-\contentsline {section}{\numberline {2}References}{9}{section.2}%
