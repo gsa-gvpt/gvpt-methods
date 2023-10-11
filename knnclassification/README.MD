@@ -1,15 +1,17 @@
-# A Very Short Introduction to LaTeX
+# An Introduction to Machine Learning with K-Nearest Neighbors (KNN)
 
-Leo Bauer
-
-Last updated: September 27, 2023
+Wenqing Huangfu
 
 ## Video, slides, and related materials
 
-A video of the presentation can be found [here](https://umd.box.com/s/9plybgx2fllolwv9a477k32jxhl1z15g). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/introLaTeX/A%20Very%20Short%20Introduction%20to%20LaTeX.pdf).
+A video of the presentation can be found [here](https://umd.box.com/s/jm606t3h35i3ifn7kcwnlivyib1661xw). The slides used for the presentation are available ([here](knnclassification/machine_learning_presentation.pdf)).
 
-Useful templates ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Templates)), cheatsheets ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Cheat%20Sheets)) and a tutorial ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Tutorial)) are also available.
+The tutorial used in the presentation, containing R code, is available as PDF and Markdown files ([here](knnclassification/Tutorial)).
 
 ## Description
 
-This workshop is designed to give a basic introduction to working with LaTeX to create scientific documents. Participants will learn about ways to use LaTeX online and offline, the principal logic of producing documents and the document structure. Further, the workshop will cover how to structure text, include graphical elements, tables and math formulas, as well as how to cite literature and use bibliographies. The aim is that after the workshop participants are equipped with the skills to create basic scientific LaTeX documents on their own.
+This is an introduction to machine learning, specifically classification and prediction tasks, with K-Nearest Neighbors (KNN).
+
+The workshop itself has three parts. First, we will unravel the basic terms and concepts of machine learning. Second, we will explore the KNN algorithm, a straightforward yet effective model perfect for those just starting out. It's suitable for both classification and prediction tasks. Last, there will be a hands-on demonstration of using KNN for classification tasks using a simulated two-class dataset.
+
+No prior knowledge or prerequisites are required. This workshop is crafted especially for beginners, ensuring each step is clear, concise, and easy to understand.
