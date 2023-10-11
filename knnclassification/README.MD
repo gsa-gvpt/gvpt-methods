@@ -4,9 +4,9 @@ Wenqing Huangfu
 
 ## Video, slides, and related materials
 
-A video of the presentation can be found [here](https://umd.box.com/s/jm606t3h35i3ifn7kcwnlivyib1661xw). The slides used for the presentation are available ([here](knnclassification/machine_learning_presentation.pdf)).
+A video of the presentation can be found [here](https://umd.box.com/s/jm606t3h35i3ifn7kcwnlivyib1661xw). The slides used for the presentation are available ([here](/machine_learning_presentation.pdf)).
 
-The tutorial used in the presentation, containing R code, is available as PDF and Markdown files ([here](knnclassification/Tutorial)).
+The tutorial used in the presentation, containing R code, is available as PDF and Markdown files ([here](/Tutorial)).
 
 ## Description
 
