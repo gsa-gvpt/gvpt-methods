@@ -1,24 +1,17 @@
-# A (brief) Introduction to Casual Inference
+# Creating Event Data with NGEC
 
-Evan Jones
+Prof. Andrew Halterman
 
-Last updated: February 15, 2021
+Last updated: October 25, 2023
 
 ## Video
 
-A video of the presentation can be found [here](https://umd.app.box.com/s/7j1u57rxioipj6gka8fogqx7xcg48hrx).
+A video of the presentation can be found [here](https://umd.box.com/s/ddwvdohch4qo41cz0n3l59t7396hzcyl).
 
 ## Description
 
-The workshop delves into the logic that underlies causal inference, introducing them to Pearl's Causal Hierarchy or "ladder of causation" and establishing why it is necessary to make stronger assumptions if researchers want to rise above purely descriptive model fitting. Evan talks about the three rungs of the ladder---associational, interventional, and counterfactual---and how we can travel up the ladder by making assumptions.
-
-In the second part, he compares experiments and observational approaches to causal inference, focusing on a) the pros and cons of each; and b) why we might choose one over the other.
-
-The final part provides a high-level overview of two prominent approaches to causal inference found in the literature, potential outcomes and structural causal models. He covers how each approaches the issue of causal "identification", their core assumptions, and concludes with a brief discussion of how they can serve as mutually reinforcing tool sets or paradigms for researchers working on questions of causal import.
+Event data–structured information on "who did what to whom"–is an important form of data in political science, but extracting it from text by hand or previous automated methods is slow, expensive, or inaccurate. This paper, and its associated Python package, break the process of generating events into separate steps and provide new automated techniques for each. It includes techniques for event and context classification using transformer-based classifiers and active learning, identifying the participants in an event using a custom question-answer model, resolving event participants to Wikipedia and locations to their geographic coordinates, and coding actors by their country and political role. Together, the steps in the pipeline can produce complete event records from text, but each component can also be used separately to address a specific challenge that a researcher faces. The talk addresses three of these steps (training a classifier, geolocation, and resolving actors to Wikipedia) with a practical focus on how researchers can do each of them.
 
 ## Materials
 
-The slides are available [here](https://github.com/gsa-gvpt/gvpt-methods/tree/master/CI_intro/intro_to_causal_inference.pdf). A tex version of the file with additional notes is available in the same directory.
-
-References to some relevant literature can be found at the end of the presentation. 
-
+All materials are available on Prof. Halterman's GitHub repository. The slides used in the workshop are available [here](https://github.com/ahalterman/NGEC/blob/main/examples/NGEC_pres.pdf). Code for the geoparsing and Wikipedia actor resolution demos shown in the workshop can be found [here](https://github.com/ahalterman/NGEC/tree/main/examples). The custom event model code can be found [here](https://github.com/ahalterman/NGEC/tree/main/setup/train_classifiers]. Finally, the overall NGEC package repo can be found [here](https://github.com/ahalterman/NGEC/tree/main).
