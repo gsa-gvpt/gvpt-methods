@@ -1,15 +1,15 @@
-# A Very Short Introduction to LaTeX
+# An Introduction to Quasi Experiments
 
-Leo Bauer
+Juan David Gélvez-Ferreira
 
-Last updated: September 27, 2023
+Last updated: November 8, 2023
 
 ## Video, slides, and related materials
 
-A video of the presentation can be found [here](https://umd.box.com/s/9plybgx2fllolwv9a477k32jxhl1z15g). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/master/introLaTeX/A%20Very%20Short%20Introduction%20to%20LaTeX.pdf).
+A video of the presentation can be found [here](https://umd.box.com/s/y2cbx4jyde9yfw1jbfv61nhcts92c6og). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/9d5d69f3321491da110c5215d2d0dfcc7c8bfc2b/quasiexperiments/Gelvez-%20causal%20inference%20and%20quasiexperiments.pdf).
 
 Useful templates ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Templates)), cheatsheets ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Cheat%20Sheets)) and a tutorial ([click!](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX/Tutorial)) are also available.
 
 ## Description
 
-This workshop is designed to give a basic introduction to working with LaTeX to create scientific documents. Participants will learn about ways to use LaTeX online and offline, the principal logic of producing documents and the document structure. Further, the workshop will cover how to structure text, include graphical elements, tables and math formulas, as well as how to cite literature and use bibliographies. The aim is that after the workshop participants are equipped with the skills to create basic scientific LaTeX documents on their own.
+This workshop on quasi-experiments is a concise exploration of regression discontinuity and dynamic difference-in-difference methods. You will discover how these statistical techniques help researchers draw causal inferences from observational data.
