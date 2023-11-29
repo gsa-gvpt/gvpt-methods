@@ -1,4 +1,4 @@
-# An Introduction to Quasi Experiments
+# Coding Event Data with GPT
 
 Harriet Goers
 
