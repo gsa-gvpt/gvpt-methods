@@ -1,6 +1,6 @@
 ## UMD Government and Politics Methodology Workshop Series
 
-__2021-2022 Maintainers:__ [Henry D. Overos](https://github.com/overos93) (hoveros@terpmail.umd.edu) and [Kee Hyun Park](https://github.com/keehyunpark) (khpark@umd.edu)
+__2023-2024 Maintainer:__ [Leo Bauer](leo-bauer.com) (leobauer@umd.edu)
 
 ### Spring 2022 Series
 1. [Introduction to Research Workflows Part I](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow1) (Henry Overos)
