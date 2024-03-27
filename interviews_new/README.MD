@@ -1,13 +1,13 @@
-# SQL Databases for the Political Science R User
+# An Introduction to Qualitative Interviews: Strategies, Challenges, and Practical Approaches
 
-Harriet Goers
+Pedro Abelin
 
-Last updated: February 21, 2024
+Last updated: March 27, 2024
 
-## Video, slides, and related materials
+## Video and slides
 
-A video of the presentation can be found [here](https://umd.box.com/s/89dm4stsxz8fzc0tm964ydrmv2doi0sw). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/8b4217313b84968ba0f83c0811f095fb6df30588/sqlforsocialsciences/Working%20with%20Big%20Data%20in%20Political%20Science.pdf). R code used in the presentation can be found in [this](https://github.com/hgoers/bigquery_workshop) GitHub repo, which provied the slides as a .qmd file.
+A video of the presentation can be found [here](https://umd.box.com/s/1asm5mj1kx6k70d8p0rfxzrkeyil5ahk). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/8b4217313b84968ba0f83c0811f095fb6df30588/sqlforsocialsciences/Working%20with%20Big%20Data%20in%20Political%20Science.pdf). 
 
 ## Description
 
-Do you want to work with big data? I mean really big data. Some research projects require that we sift through and attempt to find meaning within an extraordinary volume of data. This workshop will introduce you to a popular tool you can use to store, manage, and work with data that are too big to fit on your computer's memory: Google's BigQuery. This friendly introduction will provide you with the skills required to upload, structure, and work with your data all from within R: no SQL required!
+This workshop session will cover the practical aspects of conducting qualitative interviews, focusing on developing effective questions, strategies for navigating various interview settings, and addressing ethical concerns. We will explore the distinct characteristics of qualitative research, addressing both methodological complexities and the challenges that researchers often face.
