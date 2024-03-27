@@ -10,4 +10,4 @@ A video of the presentation can be found [here](https://umd.box.com/s/1asm5mj1kx
 
 ## Description
 
-This workshop session will cover the practical aspects of conducting qualitative interviews, focusing on developing effective questions, strategies for navigating various interview settings, and addressing ethical concerns. We will explore the distinct characteristics of qualitative research, addressing both methodological complexities and the challenges that researchers often face.
+This workshop session covers the practical aspects of conducting qualitative interviews, focusing on developing effective questions, strategies for navigating various interview settings, and addressing ethical concerns. We explore the distinct characteristics of qualitative research, addressing both methodological complexities and the challenges that researchers often face.
