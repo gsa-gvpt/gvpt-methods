@@ -6,7 +6,7 @@ Last updated: April 10, 2024
 
 ## Video and slides
 
-A video of the presentation can be found [here](https://umd.box.com/s/0ttfwssqnsabend3x5crtvcshiodlpjp). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/c9aa2a3dc74ff5bc68b0f2c8f1050b04a2754d16/datacollection/MethodsWorkshop_DataCollection.pdf). 
+A video of the presentation can be found [here](https://umd.box.com/s/ytgl9r3726uys7v5ro4ri14qi6m7vomt). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/c9aa2a3dc74ff5bc68b0f2c8f1050b04a2754d16/datacollection/MethodsWorkshop_DataCollection.pdf). 
 
 ## Description
 
