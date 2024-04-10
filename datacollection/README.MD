@@ -1,13 +1,13 @@
-# SQL Databases for the Political Science R User
+#  The Pitfalls of Data Collection: Lessons Learned from a Multi-Year Data Project
 
-Harriet Goers
+Megan Lloyd
 
-Last updated: February 21, 2024
+Last updated: April 10, 2024
 
-## Video, slides, and related materials
+## Video and slides
 
-A video of the presentation can be found [here](https://umd.box.com/s/89dm4stsxz8fzc0tm964ydrmv2doi0sw). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/8b4217313b84968ba0f83c0811f095fb6df30588/sqlforsocialsciences/Working%20with%20Big%20Data%20in%20Political%20Science.pdf). R code used in the presentation can be found in [this](https://github.com/hgoers/bigquery_workshop) GitHub repo, which provied the slides as a .qmd file.
+A video of the presentation can be found [here](https://umd.box.com/s/0ttfwssqnsabend3x5crtvcshiodlpjp). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/c9aa2a3dc74ff5bc68b0f2c8f1050b04a2754d16/datacollection/MethodsWorkshop_DataCollection.pdf). 
 
 ## Description
 
-Do you want to work with big data? I mean really big data. Some research projects require that we sift through and attempt to find meaning within an extraordinary volume of data. This workshop will introduce you to a popular tool you can use to store, manage, and work with data that are too big to fit on your computer's memory: Google's BigQuery. This friendly introduction will provide you with the skills required to upload, structure, and work with your data all from within R: no SQL required!
+Building a dataset from scratch, particularly one that converts qualitative information into quantitative data, is part and parcel of the research track. In graduate school, research assistants are often tasked with spearheading data collection efforts under the supervision of a faculty member. These can be important opportunities for professional growth but are also rife with challenges, from making important coding decisions and managing other research assistants, to adjusting coding methods and communicating realistic timelines to supervisors. In this workshop, I review common challenges related to dataset building (learned the hard way) and offer preventative solutions to improve data collection at each step of the way: preparation, coding, and cleaning data.
