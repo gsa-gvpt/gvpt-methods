@@ -1,13 +1,13 @@
-# SQL Databases for the Political Science R User
+# Are NAs the End of a Dataset? A Case for Multiple Imputations
 
-Harriet Goers
+Sebastian Suarez
 
-Last updated: February 21, 2024
+Last updated: April 24, 2024
 
 ## Video, slides, and related materials
 
-A video of the presentation can be found [here](https://umd.box.com/s/89dm4stsxz8fzc0tm964ydrmv2doi0sw). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/8b4217313b84968ba0f83c0811f095fb6df30588/sqlforsocialsciences/Working%20with%20Big%20Data%20in%20Political%20Science.pdf). R code used in the presentation can be found in [this](https://github.com/hgoers/bigquery_workshop) GitHub repo, which provied the slides as a .qmd file.
+A video of the presentation can be found [here](https://umd.box.com/s/89dm4stsxz8fzc0tm964ydrmv2doi0sw). The slides used for the presentation are available [here](https://github.com/gsa-gvpt/gvpt-methods/blob/f24ee26b105fb11885021bbcc7c9d98bda922e80/multipleimputation/multiple%20imputations.pdf). R code and a related dataset used in the presentation can be found [here](https://github.com/gsa-gvpt/gvpt-methods/blob/f24ee26b105fb11885021bbcc7c9d98bda922e80/multipleimputation/imputationsR.R) and [here](https://github.com/gsa-gvpt/gvpt-methods/blob/f24ee26b105fb11885021bbcc7c9d98bda922e80/multipleimputation/nes.csv).
 
 ## Description
 
-Do you want to work with big data? I mean really big data. Some research projects require that we sift through and attempt to find meaning within an extraordinary volume of data. This workshop will introduce you to a popular tool you can use to store, manage, and work with data that are too big to fit on your computer's memory: Google's BigQuery. This friendly introduction will provide you with the skills required to upload, structure, and work with your data all from within R: no SQL required!
+When creating and using databases, we can find instances in which missing data is common. To address this issue, one methodological approach is to perform multiple imputations on the dataset. The aim of this workshop is to provide an overview of multiple imputations and an introduction to its code in R.
