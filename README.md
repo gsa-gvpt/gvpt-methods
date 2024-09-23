@@ -1,5 +1,8 @@
 ## UMD Government and Politics Methodology Workshop Series
 
+__2024-2025 Maintainer:__ [Xiuling Zhang]() (xlzhang@umd.edu)
+
+
 
 
 __2023-2024 Maintainer:__ [Leo Bauer](https://leo-bauer.com/) (leobauer@umd.edu)
@@ -16,6 +19,7 @@ __2023-2024 Maintainer:__ [Leo Bauer](https://leo-bauer.com/) (leobauer@umd.edu)
 4. [Quasi-experimental methods](https://github.com/gsa-gvpt/gvpt-methods/tree/master/quasiexperiments) (Juan David Gélvez-Ferreira)
 5. [Using the ChatGPT API for social science tasks](https://github.com/gsa-gvpt/gvpt-methods/tree/master/usinggpt) (Harriet Goers)
 
+__2022-2023 Maintainer:__  Harriet Goers and Jordan Laura Dewar 
 ### Spring 2022 Series
 1. [Introduction to Research Workflows Part I](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow1) (Henry Overos)
 2. [Introduction to Research Workflows Part II](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow2) (Harriet Goers)
