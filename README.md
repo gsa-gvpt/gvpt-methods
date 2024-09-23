@@ -1,18 +1,20 @@
 ## UMD Government and Politics Methodology Workshop Series
 
+
+
 __2023-2024 Maintainer:__ [Leo Bauer](https://leo-bauer.com/) (leobauer@umd.edu)
 ### Spring 2023 Series
-1. SQL Databases for the Social Science R User (Harriet Goers)
-2. Qualitative Interview Techniques for Political Scientists (Pedro Abelin)
-3. The Pitfalls of Data Collection: Lessons Learned from a Multi-Year Data Project (Megan Lloyd)
-4. Using Multiple Imputation to Address Missing Data in Political Science Research (Sebastian Suarez)
+1. [SQL Databases for the Social Science R User](https://github.com/gsa-gvpt/gvpt-methods/tree/master/sqlforsocialsciences) (Harriet Goers)
+2. [Qualitative Interview Techniques for Political Scientists](https://github.com/gsa-gvpt/gvpt-methods/tree/master/interviews_new) (Pedro Abelin)
+3. [The Pitfalls of Data Collection: Lessons Learned from a Multi-Year Data Project](https://github.com/gsa-gvpt/gvpt-methods/tree/master/datacollection) (Megan Lloyd)
+4. [Using Multiple Imputation to Address Missing Data in Political Science Research](https://github.com/gsa-gvpt/gvpt-methods/tree/master/multipleimputation) (Sebastian Suarez)
   
 ### Fall 2023 Series
-1. Using LaTeX for Scientific Writing (Leo Bauer)
-2. Machine Learning for Classification Tasks (Wenqing Huangfu)
-3. Creating event data sets from text data (NGEC project) (Dr. Andrew Halterman)
-4. Quasi-experimental methods (Juan David Gélvez-Ferreira)
-5. Using the ChatGPT API for social science tasks (Harriet Goers)
+1. [Using LaTeX for Scientific Writing](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX) (Leo Bauer)
+2. [Machine Learning for Classification Tasks](https://github.com/gsa-gvpt/gvpt-methods/tree/master/knnclassification) (Wenqing Huangfu)
+3. [Creating event data sets from text data (NGEC project)](https://github.com/gsa-gvpt/gvpt-methods/tree/master/eventdata) (Prof. Andrew Halterman)
+4. [Quasi-experimental methods](https://github.com/gsa-gvpt/gvpt-methods/tree/master/quasiexperiments) (Juan David Gélvez-Ferreira)
+5. [Using the ChatGPT API for social science tasks](https://github.com/gsa-gvpt/gvpt-methods/tree/master/usinggpt) (Harriet Goers)
 
 ### Spring 2022 Series
 1. [Introduction to Research Workflows Part I](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow1) (Henry Overos)
