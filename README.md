@@ -1,11 +1,12 @@
 ## UMD Government and Politics Methodology Workshop Series
 
-__2024-2025 Maintainer:__ [Xiuling Zhang]() (xlzhang@umd.edu)
-1. Scrape and Collect Online Data with RSelenium, (Guadalupe Gonzalez)
-2. Video-as-Data Methods for Political Science Research, (Prof. Yilang Peng, University of Georgia)
+__2024-2025 Maintainer:__ [Xiuling Zhang](https://github.com/xlzhang95) (xlzhang@umd.edu)
+### Fall 2024 Series
+1. Scrape and Collect Online Data with RSelenium (Guadalupe Gonzalez)
+2. Video-as-Data Methods for Political Science Research (Prof. Yilang Peng, University of Georgia)
 3. Randomized Block Design for Conjoint and Vignette Survey Experiments (Xiuling Zhang)
 4. Ethnographic Techniques in Political Science (Sebastian Suarez)
-5. TBD, Ojashwi Pathak
+5. TBD (Ojashwi Pathak)
 
 __2023-2024 Maintainer:__ [Leo Bauer](https://leo-bauer.com/) (leobauer@umd.edu)
 ### Spring 2023 Series
