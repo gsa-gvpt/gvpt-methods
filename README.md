@@ -2,7 +2,7 @@
 
 __2024-2025 Maintainer:__ [Xiuling Zhang](https://github.com/xlzhang95) (xlzhang@umd.edu)
 ### Fall 2024 Series
-1. Scrape and Collect Online Data with RSelenium (Guadalupe Gonzalez)
+1. [Scrape and Collect Online Data with RSelenium](https://github.com/guadag12/selenium-r-workshop) ([Guadalupe Gonzalez](https://github.com/guadag12))
 2. Video-as-Data Methods for Political Science Research (Prof. Yilang Peng, University of Georgia)
 3. Randomized Block Design for Conjoint and Vignette Survey Experiments (Xiuling Zhang)
 4. Ethnographic Techniques in Political Science (Sebastian Suarez)
