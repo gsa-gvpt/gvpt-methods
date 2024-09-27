@@ -9,7 +9,7 @@ __2024-2025 Maintainer:__ [Xiuling Zhang](https://github.com/xlzhang95) (xlzhang
 5. TBD (Ojashwi Pathak)
 
 __2023-2024 Maintainer:__ [Leo Bauer](https://leo-bauer.com/) (leobauer@umd.edu)
-### Spring 2023 Series
+### Spring 2024 Series
 1. [SQL Databases for the Social Science R User](https://github.com/gsa-gvpt/gvpt-methods/tree/master/sqlforsocialsciences) (Harriet Goers)
 2. [Qualitative Interview Techniques for Political Scientists](https://github.com/gsa-gvpt/gvpt-methods/tree/master/interviews_new) (Pedro Abelin)
 3. [The Pitfalls of Data Collection: Lessons Learned from a Multi-Year Data Project](https://github.com/gsa-gvpt/gvpt-methods/tree/master/datacollection) (Megan Lloyd)
@@ -23,14 +23,14 @@ __2023-2024 Maintainer:__ [Leo Bauer](https://leo-bauer.com/) (leobauer@umd.edu)
 5. [Using the ChatGPT API for social science tasks](https://github.com/gsa-gvpt/gvpt-methods/tree/master/usinggpt) (Harriet Goers)
 
 __2022-2023 Maintainer:__  Harriet Goers and Jordan Laura Dewar 
-### Spring 2022 Series
+### Spring 2023 Series
 1. [Introduction to Research Workflows Part I](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow1) (Henry Overos)
 2. [Introduction to Research Workflows Part II](https://github.com/gsa-gvpt/gvpt-methods/tree/master/workflow2) (Harriet Goers)
 3. [Introduction to Random Forest](https://github.com/gsa-gvpt/gvpt-methods/tree/master/randomforest) (Oja Pathak)
 4. [Introduction to Bayesian Inference](https://github.com/gsa-gvpt/gvpt-methods/tree/master/bayesianinference) (Tasha Fairfield)
 5. [Data Labs at Pew Research Center: Using Data Science to Study Society, Culture, & Politics](https://github.com/gsa-gvpt/gvpt-methods/tree/master/pew) (Samuel E. Bestvater)
 
-### Fall 2021 Series
+### Fall 2022 Series
 1. [Case Studies and Quandaries](https://github.com/gsa-gvpt/gvpt-methods/tree/master/casestudies) (Autumn Perky)
 2. [Causal Inference: Weighting Methods](https://github.com/gsa-gvpt/gvpt-methods/tree/master/weighting) (Lizzie Irlbacher and Guan Wang)
 3. [A Very Short Introduction to LaTeX](https://github.com/gsa-gvpt/gvpt-methods/tree/master/introLaTeX) (Leo Bauer)
