@@ -3,7 +3,7 @@
 __2024-2025 Maintainer:__ [Xiuling Zhang](https://github.com/xlzhang95) (xlzhang@umd.edu)
 ### Fall 2024 Series
 1. [Scrape and Collect Online Data with RSelenium](https://github.com/guadag12/selenium-r-workshop) ([recording](https://umd.box.com/s/zeoo9y18f5n9wvfvi7wfa3x3y737ixbf)) ([Guadalupe Gonzalez](https://github.com/guadag12))
-2. Video-as-Data Methods for Political Science Research (Prof. Yilang Peng, University of Georgia)
+2. [Video-as-Data Methods for Political Science Research](https://github.com/gsa-gvpt/gvpt-methods/tree/8c1c41c7f7311c3d640a15ca468132dcaab7e4e4/videodata) ([Prof. Yilang Peng](https://github.com/yilangpeng), University of Georgia)
 3. Randomized Block Design for Conjoint and Vignette Survey Experiments (Xiuling Zhang)
 4. Ethnographic Techniques in Political Science (Sebastian Suarez)
 5. TBD (Ojashwi Pathak)
