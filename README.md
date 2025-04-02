@@ -4,7 +4,7 @@ __2024-2025 Maintainer:__ [Xiuling Zhang](https://github.com/xlzhang95) (xlzhang
 
 ### Spring 2025 Series
 1. [Predicting Police and Military Violence: Evidence from Colombia and Mexico Using Machine Learning Models](https://github.com/gsa-gvpt/gvpt-methods/tree/master/Prediction) [Juan David Gelvez ](https://juangelvezf.github.io/)
-2. ['goteRps' Package for Themed R Presentations ](https://github.com/guadag12/goterps) ([recording]())[Guadalupe Gonzalez](https://github.com/guadag12)
+2. ['goteRps' Package for Themed R Presentations ](https://github.com/guadag12/goterps) ([recording]()) [Guadalupe Gonzalez](https://github.com/guadag12)
 
 ### Fall 2024 Series
 1. [Scrape and Collect Online Data with RSelenium](https://github.com/guadag12/selenium-r-workshop) ([recording](https://umd.box.com/s/zeoo9y18f5n9wvfvi7wfa3x3y737ixbf)) ([Guadalupe Gonzalez](https://github.com/guadag12))
