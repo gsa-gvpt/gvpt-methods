@@ -1,6 +1,7 @@
 # Political Ethnography 
 
 Sebastian Suarez 
+
 This workshop introduces the use of ethnographic methods in political science research.
 
 Video and Slides: 
