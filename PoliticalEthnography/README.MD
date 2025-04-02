@@ -1,4 +1,4 @@
-# Political Ethnography 
+# An introduction to political ethnography 
 
 Sebastian Suarez 
 
