@@ -4,7 +4,7 @@ __2024-2025 Maintainer:__ [Xiuling Zhang](https://github.com/xlzhang95) (xlzhang
 ### Fall 2024 Series
 1. [Scrape and Collect Online Data with RSelenium](https://github.com/guadag12/selenium-r-workshop) ([recording](https://umd.box.com/s/zeoo9y18f5n9wvfvi7wfa3x3y737ixbf)) ([Guadalupe Gonzalez](https://github.com/guadag12))
 2. [Video-as-Data Methods for Political Science Research](https://github.com/gsa-gvpt/gvpt-methods/tree/8c1c41c7f7311c3d640a15ca468132dcaab7e4e4/videodata) ([Prof. Yilang Peng](https://github.com/yilangpeng), University of Georgia)
-3. [Ethnographic Techniques in Political Science](https://github.com/gsa-gvpt/gvpt-methods/edit/master/PoliticalEthnography/README.MD) (Sebastian Suarez)
+3. [Ethnographic Techniques in Political Science](https://github.com/gsa-gvpt/gvpt-methods/blob/master/PoliticalEthnography/README.MD) (Sebastian Suarez)
 
 __2023-2024 Maintainer:__ [Leo Bauer](https://leo-bauer.com/) (leobauer@umd.edu)
 ### Spring 2024 Series
